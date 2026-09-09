@@ -1,12 +1,19 @@
-body {
+/* --- RESET SIMPLE --- */
+body, h1, h2, h3, p, ul, li, nav, footer {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #fafafa;
-  color: #333;
 }
 
+/* --- GLOBAL --- */
+body {
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* --- HEADER --- */
 header {
   background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
@@ -14,26 +21,41 @@ header {
   margin-bottom: 30px;
 }
 
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 nav a {
-  margin-right: 20px;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 nav a:hover {
-  color: #0077cc;
+  color: #0077ff;
+}
+
+/* --- MAIN CONTENT --- */
+main {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 h1 {
   margin-bottom: 20px;
-  font-size: 28px;
 }
 
+/* --- FOOTER --- */
 footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #e5e5e5;
   text-align: center;
-  color: #777;
+  margin-top: 40px;
+  padding: 20px 0;
+  color: #666;
+  font-size: 14px;
 }
