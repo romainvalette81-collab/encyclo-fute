@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<article class="encyclo-article">
+
+  <h1 class="encyclo-title">{{ .Title }}</h1>
+
+  <div class="encyclo-content">
+    {{ .Content }}
+  </div>
+
+</article>
+
+<section class="encyclo-more">
+  <h2>Autres articles de l’Encyclopédie</h2>
+
+  <ul>
+    {{ range .CurrentSection.Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}
