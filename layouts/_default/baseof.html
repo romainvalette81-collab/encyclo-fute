@@ -5,11 +5,27 @@
   <title>{{ .Title }} - Encyclo Futé</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-  {{ partial "header.html" . }}
+
+  <header>
+    <nav>
+      <a href="/">Encyclo Futé</a>
+      <a href="/encyclopedie/">Encyclopédie</a>
+      <a href="/guides/">Guides pratiques</a>
+      <a href="/categories/">Catégories</a>
+      <a href="/about/">À propos</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-  {{ partial "footer.html" . }}
+
+  <footer>
+    <p>© Encyclo Futé — {{ now.Year }}</p>
+  </footer>
+
 </body>
 </html>
