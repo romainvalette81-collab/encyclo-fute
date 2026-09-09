@@ -5,3 +5,21 @@ paginate = 10
 
 [params]
   description = "Encyclopédie du quotidien et guides pratiques."
+
+[menu]
+
+  [[menu.main]]
+  name = "Encyclopédie"
+  url = "/encyclopedie/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Guides pratiques"
+  url = "/guides/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Catégories"
+  url = "/categories/"
+  weight = 3
+
