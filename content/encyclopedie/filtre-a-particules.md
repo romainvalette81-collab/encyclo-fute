@@ -1,3 +1,6 @@
+categories = ["Automobile"]
+
+
 +++
 title = "Qu’est-ce qu’un filtre à particules ?"
 description = "Définition simple et claire du filtre à particules (FAP), son rôle, son fonctionnement et les signes de dysfonctionnement."
