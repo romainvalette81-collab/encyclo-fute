@@ -9,15 +9,18 @@
 <body>
 
   <header>
-    <nav>
-      <a href="/">Encyclo Futé</a>
-      <a href="/encyclopedie/">Encyclopédie</a>
-      <a href="/guides/">Guides pratiques</a>
-      <a href="/categories/">Catégories</a>
-      <a href="/about/">À propos</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="/">
+      <img src="/logo.png" alt="Encyclo Futé" style="height:40px; vertical-align:middle;">
+    </a>
+
+    <a href="/encyclopedie/">Encyclopédie</a>
+    <a href="/guides/">Guides pratiques</a>
+    <a href="/categories/">Catégories</a>
+    <a href="/about/">À propos</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
 
   <main>
     {{ block "main" . }}{{ end }}
