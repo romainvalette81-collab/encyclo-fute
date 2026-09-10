@@ -1,19 +1,14 @@
-name: Deploy Hugo site to Pages
+name: Build and Deploy Hugo site
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+  schedule:
+    - cron: "1 0 * * *"   # Tous les jours à 00h01
+  workflow_dispatch:      # Permet de lancer manuellement si besoin
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,15 +21,8 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: actions/deploy-pages@v4
-        
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
