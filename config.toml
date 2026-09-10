@@ -23,3 +23,8 @@ paginate = 10
   url = "/categories/"
   weight = 3
 
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+  filename = "sitemap.xml"
+
