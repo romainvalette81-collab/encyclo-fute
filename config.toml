@@ -1,12 +1,11 @@
 baseURL = "https://romainvalette81-collab.github.io/encyclo-fute/"
 languageCode = "fr"
 title = "Encyclo Futé"
-theme = "minimal"
 paginate = 10
 buildFuture = true
 
 [params]
-  description = "Encyclopédie futée du quotidien : maison, auto, tech, administratif, minimalisme, organisation."
+description = "Encyclopédie futée du quotidien : maison, auto, tech, administratif, minimalisme, organisation."
 
 [menu]
 
