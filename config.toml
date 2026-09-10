@@ -1,30 +1,37 @@
 baseURL = "https://romainvalette81-collab.github.io/encyclo-fute/"
 languageCode = "fr"
 title = "Encyclo Futé"
+theme = "minimal"
 paginate = 10
+buildFuture = true
 
 [params]
-  description = "Encyclopédie du quotidien et guides pratiques."
+  description = "Encyclopédie futée du quotidien : maison, auto, tech, administratif, minimalisme, organisation."
 
 [menu]
 
   [[menu.main]]
-  name = "Encyclopédie"
-  url = "/encyclopedie/"
-  weight = 1
+    name = "Accueil"
+    url = "/"
+    weight = 1
 
   [[menu.main]]
-  name = "Guides pratiques"
-  url = "/guides/"
-  weight = 2
+    name = "Articles"
+    url = "/articles/"
+    weight = 2
 
   [[menu.main]]
-  name = "Catégories"
-  url = "/categories/"
-  weight = 3
+    name = "Catégories"
+    url = "/categories/"
+    weight = 3
 
-[sitemap]
-  changefreq = "daily"
-  priority = 0.5
-  filename = "sitemap.xml"
+  [[menu.main]]
+    name = "Guides"
+    url = "/guides/"
+    weight = 4
 
+  [[menu.main]]
+    name = "À propos"
+    url = "/a-propos/"
+    weight = 5
+    
