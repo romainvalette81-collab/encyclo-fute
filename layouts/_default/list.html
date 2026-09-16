@@ -1,10 +1,36 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  <p>{{ .Description }}</p>
 
-  <ul>
-    {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+<h1>{{ .Title }}</h1>
+
+<!-- SECTION : GUIDES PILIERS -->
+<h2>Guides piliers</h2>
+<ul>
+  {{/* Liste manuelle des slugs de tes 3 guides piliers */}}
+  {{ $piliers := slice "le-minimalisme" "organisation-quotidien" "maison-minimaliste" }}
+
+  {{ range $piliers }}
+    {{ $page := $.Site.GetPage (printf "guides/%s" .) }}
+    {{ if $page }}
+      <li>
+        <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+      </li>
     {{ end }}
-  </ul>
+  {{ end }}
+</ul>
+
+<!-- SECTION : AUTRES GUIDES -->
+<h2>Guides pratiques</h2>
+<ul>
+  {{ range .Pages }}
+    {{ $slug := .File.BaseFileName }}
+
+    {{/* On ignore les piliers pour ne pas les afficher deux fois */}}
+    {{ if not (in (slice "le-minimalisme" "organisation-quotidien" "maison-minimaliste") $slug) }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
+
 {{ end }}
