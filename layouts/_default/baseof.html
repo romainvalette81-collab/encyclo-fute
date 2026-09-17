@@ -1,32 +1,34 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="fr">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ define "main" }}
 
-    <title>{{ block "title" . }}{{ .Title }} — Encyclo Futé{{ end }}</title>
-</head>
+<h1>{{ .Title }}</h1>
 
-<body>
+<!-- SECTION : GUIDES PILIERS -->
+<h2>Guides piliers</h2>
+<ul>
+  {{ $piliers := slice "le-minimalisme" "organisation-quotidien" "maison-minimaliste" }}
 
-<header>
-    <nav>
-        <a href="/">Encyclo Futé</a>
-        <a href="/encyclopedie/">Encyclopédie</a>
-        <a href="/guides/">Guides pratiques</a>
-        <a href="/propos/">À propos</a>
-        <a href="/contact/">Contact</a>
-    </nav>
-</header>
+  {{ range $piliers }}
+    {{ $page := $.Site.GetPage (printf "guides/%s" .) }}
+    {{ if $page }}
+      <li>
+        <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
 
-<main>
-    {{ block "main" . }}{{ end }}
-</main>
+<!-- SECTION : AUTRES GUIDES -->
+<h2>Guides pratiques</h2>
+<ul>
+  {{ range .Pages }}
+    {{ $slug := .RelPermalink }}
 
-<footer>
-    <p>© Encyclo Futé — 2026</p>
-</footer>
+    {{ if not (in (slice "/guides/le-minimalisme/" "/guides/organisation-quotidien/" "/guides/maison-minimaliste/") $slug) }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
 
-</body>
-</html>
+{{ end }}
