@@ -2,33 +2,43 @@
 
 <h1>{{ .Title }}</h1>
 
-<!-- SECTION : GUIDES PILIERS -->
-<h2>Guides piliers</h2>
-<ul>
-  {{ $piliers := slice "le-minimalisme" "organisation-quotidien" "maison-minimaliste" }}
+{{ if .IsHome }}
 
-  {{ range $piliers }}
-    {{ $page := $.Site.GetPage (printf "guides/%s" .) }}
-    {{ if $page }}
-      <li>
-        <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
-      </li>
+  <!-- PAGE D’ACCUEIL -->
+  <h2>Guides piliers</h2>
+  <ul>
+    {{ $piliers := slice "le-minimalisme" "organisation-quotidien" "maison-minimaliste" }}
+
+    {{ range $piliers }}
+      {{ $page := $.Site.GetPage (printf "guides/%s" .) }}
+      {{ if $page }}
+        <li>
+          <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+        </li>
+      {{ end }}
     {{ end }}
-  {{ end }}
-</ul>
+  </ul>
 
-<!-- SECTION : AUTRES GUIDES -->
-<h2>Guides pratiques</h2>
-<ul>
-  {{ range .Pages }}
-    {{ $url := .RelPermalink }}
-
-    {{ if not (in (slice "/guides/le-minimalisme/" "/guides/organisation-quotidien/" "/guides/maison-minimaliste/") $url) }}
+  <h2>Guides pratiques</h2>
+  <ul>
+    {{ range (where $.Site.RegularPages "Section" "guides") }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
     {{ end }}
-  {{ end }}
-</ul>
+  </ul>
+
+{{ else }}
+
+  <!-- LISTE STANDARD POUR LES SECTIONS -->
+  <ul>
+    {{ range .Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+{{ end }}
 
 {{ end }}
