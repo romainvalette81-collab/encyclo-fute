@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<article class="encyclo-article">
+  <h1 class="encyclo-title">{{ .Title }}</h1>
+  <div class="encyclo-content">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ $pages := .RegularPages }}
+{{ if $pages }}
+<section class="encyclo-more">
+  <h2>Fiches de l’Encyclopédie</h2>
+  <ul>
+    {{ range $pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{ end }}
