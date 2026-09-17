@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+{{ $pages := .RegularPages }}
+{{ if $pages }}
+  <h2>Tous les guides</h2>
+  <ul>
+    {{ range $pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ else }}
+  <p><em>Aucun guide publié pour le moment.</em></p>
+{{ end }}
+
+{{ end }}
