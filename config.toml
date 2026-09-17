@@ -4,33 +4,45 @@ title = "Encyclo Futé"
 paginate = 10
 buildFuture = false
 
+# Important pour GitHub Pages en sous-dossier
+relativeURLs = true
+canonifyURLs = true
+
 [params]
 description = "Encyclopédie futée du quotidien : maison, auto, tech, administratif, minimalisme, organisation."
 
 [menu]
-
   [[menu.main]]
     name = "Accueil"
     url = "/"
     weight = 1
 
   [[menu.main]]
+    name = "Encyclopédie"
+    url = "/encyclopedie/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Guides pratiques"
+    url = "/guides/"
+    weight = 3
+
+  [[menu.main]]
     name = "Articles"
     url = "/articles/"
-    weight = 2
+    weight = 4
 
   [[menu.main]]
     name = "Catégories"
     url = "/categories/"
-    weight = 3
-
-  [[menu.main]]
-    name = "Guides"
-    url = "/guides/"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     name = "À propos"
-    url = "/a-propos/"
-    weight = 5
-    
+    url = "/about/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 7
