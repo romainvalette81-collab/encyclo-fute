@@ -32,6 +32,11 @@
 
   {{ .Content }}
 
+<p style="color: red;">
+  Nombre d'articles dans cette section :
+  {{ len .RegularPages }}
+</p>
+
   <!-- LISTE DES ARTICLES -->
 
   {{ $pages := .RegularPages }}
