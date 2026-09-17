@@ -4,18 +4,31 @@
 
 {{ .Content }}
 
+<!-- Liste des articles de la section -->
 {{ $pages := .RegularPages }}
-{{ if $pages }}
-  <h2>Tous les guides</h2>
+
+{{ if gt (len $pages) 0 }}
+
+  <h2>
+    {{ if eq .Section "encyclopedie" }}
+      Fiches de l’Encyclopédie
+    {{ else if eq .Section "guides" }}
+      Guides pratiques
+    {{ else }}
+      Articles
+    {{ end }}
+  </h2>
+
   <ul>
-    {{ range $pages }}
+    {{ range $pages.ByTitle }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
     {{ end }}
   </ul>
+
 {{ else }}
-  <p><em>Aucun guide publié pour le moment.</em></p>
-{{ end }}
+
+  <p>Aucun article disponible dans cette rubrique.</p>
 
 {{ end }}
