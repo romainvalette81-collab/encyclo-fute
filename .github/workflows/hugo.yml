@@ -2,7 +2,7 @@ name: Build and Deploy Hugo site
 
 on:
   schedule:
-    - cron: "1 0 * * *"   # Tous les jours à 00h01 UTC
+    - cron: "1 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build Hugo
-        run: hugo --minify
+        run: hugo --source . --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -35,3 +35,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+        
