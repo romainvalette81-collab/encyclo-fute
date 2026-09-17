@@ -1,6 +1,9 @@
 name: Build and Deploy Hugo site
 
 on:
+  push:
+    branches:
+      - main          # ou master selon ta branche principale
   schedule:
     - cron: "1 0 * * *"
   workflow_dispatch:
@@ -11,14 +14,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # utile si tu as des dates de commit
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+          extended: true
 
       - name: Build Hugo
-        run: hugo --source . --minify
+        run: hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -31,8 +37,10 @@ jobs:
     permissions:
       pages: write
       id-token: write
-
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
-        
