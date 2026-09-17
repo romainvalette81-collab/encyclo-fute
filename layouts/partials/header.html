@@ -1,16 +1,16 @@
 <nav style="display:flex; gap:20px; align-items:center; padding:10px 0;">
 
     <!-- LOGO -->
-    <a href="/">
-        <img src="/logo.png" alt="Logo Encyclo Futé" style="height:40px;">
+    <a href="{{ "/" | relURL }}">
+        <img src="{{ "logo.png" | relURL }}" alt="Logo Encyclo Futé" style="height:40px;">
     </a>
 
     <!-- MENU -->
-    <a href="/encyclopedie/">Encyclopédie</a>
-    <a href="/guides/">Guides pratiques</a>
-    <a href="/articles/">Articles</a>
-    <a href="/categories/">Catégories</a>
-    <a href="/about/">À propos</a>
-    <a href="/contact/">Contact</a>
+    <a href="{{ "encyclopedie/" | relURL }}">Encyclopédie</a>
+    <a href="{{ "guides/" | relURL }}">Guides pratiques</a>
+    <a href="{{ "articles/" | relURL }}">Articles</a>
+    <a href="{{ "categories/" | relURL }}">Catégories</a>
+    <a href="{{ "about/" | relURL }}">À propos</a>
+    <a href="{{ "contact/" | relURL }}">Contact</a>
 
 </nav>
