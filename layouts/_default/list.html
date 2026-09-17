@@ -5,7 +5,6 @@
 <!-- SECTION : GUIDES PILIERS -->
 <h2>Guides piliers</h2>
 <ul>
-  {{/* Liste manuelle des slugs de tes 3 guides piliers */}}
   {{ $piliers := slice "le-minimalisme" "organisation-quotidien" "maison-minimaliste" }}
 
   {{ range $piliers }}
@@ -22,10 +21,9 @@
 <h2>Guides pratiques</h2>
 <ul>
   {{ range .Pages }}
-    {{ $slug := .File.BaseFileName }}
+    {{ $url := .RelPermalink }}
 
-    {{/* On ignore les piliers pour ne pas les afficher deux fois */}}
-    {{ if not (in (slice "le-minimalisme" "organisation-quotidien" "maison-minimaliste") $slug) }}
+    {{ if not (in (slice "/guides/le-minimalisme/" "/guides/organisation-quotidien/" "/guides/maison-minimaliste/") $url) }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
