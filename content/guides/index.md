@@ -1,24 +1,23 @@
 ---
-title: "Encyclopédie"
-description: "Toutes les explications simples et utiles pour comprendre les objets, documents et notions du quotidien."
+title: "Guides pratiques"
+description: "Des guides concrets pour simplifier le quotidien : maison, organisation, tech, auto, minimalisme."
 ---
 
-## Bienvenue dans l’Encyclopédie Futée
+## Guides pratiques
 
-Cette section regroupe des fiches claires, courtes et pratiques pour comprendre facilement :
+Ici tu trouveras des guides concrets et actionnables pour améliorer ton quotidien.
 
-- les objets du quotidien  
-- les documents administratifs  
-- les équipements de la maison  
-- les éléments techniques (auto, électricité, eau, etc.)  
-- les notions utiles pour mieux s’organiser  
+Chaque guide est pensé pour être :
+- **simple** à suivre
+- **utile** immédiatement
+- **sans jargon**
 
-Chaque fiche est pensée pour être **simple**, **utile** et **directe**, sans jargon.
+### Thèmes abordés
 
-## Comment fonctionne cette section ?
+- Organisation du quotidien  
+- Maison et entretien  
+- Minimalisme  
+- Tech et outils numériques  
+- Auto et gestes de base  
 
-- Chaque fiche est un article encyclopédique.  
-- Elles sont classées par thèmes.  
-- Tu peux naviguer via le menu ou via les catégories.
-
-Bonne lecture !
+Choisis un guide et applique-le pas à pas.
