@@ -4,8 +4,10 @@
 
 {{ if .IsHome }}
 
-  <!-- PAGE D’ACCUEIL -->
+  <!-- PAGE D'ACCUEIL -->
+
   <h2>Derniers articles</h2>
+
   <ul>
     {{ range first 7 (where .Site.RegularPages "Section" "articles") }}
       <li>
@@ -15,6 +17,7 @@
   </ul>
 
   <h2>Guides pratiques</h2>
+
   <ul>
     {{ range (where .Site.RegularPages "Section" "guides") }}
       <li>
@@ -25,20 +28,38 @@
 
 {{ else }}
 
-  <!-- Contenu de la page (_index.md) -->
+  <!-- CONTENU DE LA SECTION -->
+
   {{ .Content }}
 
-  <!-- Liste des pages de cette section uniquement -->
-  {{ $pages := .Pages }}
-  {{ if $pages }}
-    <h2>{{ if eq .Section "encyclopedie" }}Fiches de l’Encyclopédie{{ else if eq .Section "guides" }}Guides{{ else }}Articles{{ end }}</h2>
+  <!-- LISTE DES ARTICLES -->
+
+  {{ $pages := .RegularPages }}
+
+  {{ if gt (len $pages) 0 }}
+
+    <h2>
+      {{ if eq .Section "encyclopedie" }}
+        Fiches de l'Encyclopédie
+      {{ else if eq .Section "guides" }}
+        Guides pratiques
+      {{ else }}
+        Articles
+      {{ end }}
+    </h2>
+
     <ul>
-      {{ range $pages }}
+      {{ range $pages.ByTitle }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
       {{ end }}
     </ul>
+
+  {{ else }}
+
+    <p>Aucun article disponible dans cette rubrique.</p>
+
   {{ end }}
 
 {{ end }}
