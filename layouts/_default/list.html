@@ -5,23 +5,18 @@
 {{ if .IsHome }}
 
   <!-- PAGE D’ACCUEIL -->
-  <h2>Guides piliers</h2>
+  <h2>Derniers articles</h2>
   <ul>
-    {{ $piliers := slice "le-minimalisme" "organisation-quotidien" "maison-minimaliste" }}
-
-    {{ range $piliers }}
-      {{ $page := $.Site.GetPage (printf "guides/%s" .) }}
-      {{ if $page }}
-        <li>
-          <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
-        </li>
-      {{ end }}
+    {{ range first 7 (where .Site.RegularPages "Section" "articles") }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
     {{ end }}
   </ul>
 
   <h2>Guides pratiques</h2>
   <ul>
-    {{ range (where $.Site.RegularPages "Section" "guides") }}
+    {{ range (where .Site.RegularPages "Section" "guides") }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
@@ -30,14 +25,21 @@
 
 {{ else }}
 
-  <!-- LISTE STANDARD POUR LES SECTIONS -->
-  <ul>
-    {{ range .Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+  <!-- Contenu de la page (_index.md) -->
+  {{ .Content }}
+
+  <!-- Liste des pages de cette section uniquement -->
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+    <h2>{{ if eq .Section "encyclopedie" }}Fiches de l’Encyclopédie{{ else if eq .Section "guides" }}Guides{{ else }}Articles{{ end }}</h2>
+    <ul>
+      {{ range $pages }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
 
 {{ end }}
 
