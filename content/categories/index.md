@@ -1,19 +1,17 @@
 ---
 title: "Catégories"
-description: "Toutes les thématiques de l’Encyclo Futé regroupées en sections claires."
+description: "Navigue par thème : automobile, maison, tech, administratif, organisation, minimalisme."
 ---
 
 ## Explorer les catégories
 
 Les catégories te permettent de naviguer facilement dans les différents thèmes du site :
 
-- automobile  
-- maison  
-- tech  
-- administratif  
-- organisation  
-- minimalisme  
+- [automobile]({{< ref "/categories/automobile" >}})
+- [maison]({{< ref "/categories/maison" >}})
+- [tech]({{< ref "/categories/tech" >}})
+- [administratif]({{< ref "/categories/administratif" >}})
+- [organisation]({{< ref "/categories/organisation" >}})
+- [minimalisme]({{< ref "/categories/minimalisme" >}})
 
-Chaque catégorie regroupe des articles et des guides liés à un même sujet pour une navigation simple et logique.
-
-Choisis ton thème et explore !
+Chaque catégorie regroupe des articles et des guides liés à un même sujet.
