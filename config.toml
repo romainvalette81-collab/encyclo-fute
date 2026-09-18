@@ -8,10 +8,14 @@ buildFuture = false
 relativeURLs = true
 canonifyURLs = true
 
+[taxonomies]
+  category = "categories"
+
 [params]
 description = "Encyclopédie futée du quotidien : maison, auto, tech, administratif, minimalisme, organisation."
 
 [menu]
+
   [[menu.main]]
     name = "Accueil"
     url = "/"
