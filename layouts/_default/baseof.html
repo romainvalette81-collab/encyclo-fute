@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Language" content="fr">
@@ -11,3 +13,16 @@
     <!-- Favicon -->
     <link rel="icon" href="{{ "logo.png" | relURL }}" type="image/png">
 </head>
+
+<body>
+
+    {{ partial "header.html" . }}
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+
+</body>
+</html>
