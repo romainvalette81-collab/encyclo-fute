@@ -5,11 +5,5 @@ description: "Navigue par thème : automobile, maison, tech, administratif, orga
 
 ## Explorer les catégories
 
-Les catégories te permettent de naviguer facilement dans les différents thèmes du site :
-
-- Cuisine
-- Débats du Quotidien
-- Auto
-- Bien-être
-- Culture
-- Organisation
+Les catégories te permettent de naviguer facilement dans les différents thèmes du site.
+Chaque catégorie regroupe des articles et des guides liés à un même sujet.
