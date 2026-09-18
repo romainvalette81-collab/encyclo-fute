@@ -3,42 +3,37 @@ title = "Encyclo Futé"
 description = "Comprendre simplement les choses du quotidien."
 +++
 
-# Bienvenue sur **Encyclo Futé**
+# Bienvenue sur Encyclo Futé
 
 Votre encyclopédie moderne, claire et pratique.  
 Des explications simples, des guides utiles, et des catégories organisées pour aller droit au but.
 
----
+## Explorer l’Encyclopédie
 
-## 🔍 Explorer l’Encyclopédie
-Des articles courts, précis, pensés pour comprendre rapidement un sujet du quotidien.
+Des articles courts et précis pour comprendre rapidement un sujet du quotidien.
 
-👉 [Accéder à l’Encyclopédie](/encyclopedie/)
+→ [Accéder à l’Encyclopédie](encyclopedie/)
 
----
+## Guides pratiques
 
-## 🛠️ Guides pratiques
-Des tutoriels simples, des étapes claires, des solutions concrètes pour agir immédiatement.
+Des tutoriels simples, des étapes claires, des solutions concrètes.
 
-👉 [Voir les Guides pratiques](/guides/)
+→ [Voir les guides pratiques](guides/)
 
----
+## Catégories
 
-## 🗂️ Catégories
 Une navigation organisée pour trouver facilement ce que vous cherchez.
 
-👉 [Parcourir les catégories](/categories/)
+→ [Parcourir les catégories](categories/)
 
----
+## À propos
 
-## ℹ️ À propos
-Découvrez la mission d’Encyclo Futé et la philosophie derrière ce projet.
+La mission d’Encyclo Futé et la philosophie du projet.
 
-👉 [En savoir plus](/about/)
+→ [En savoir plus](about/)
 
----
+## Contact
 
-## 📬 Contact
 Une question, une suggestion, une idée d’article ?
 
-👉 [Nous contacter](/contact/)
+→ [Nous contacter](contact/)
