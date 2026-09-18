@@ -3,7 +3,7 @@ name: Build and Deploy Hugo site
 on:
   push:
     branches:
-      - main          # ou master selon ta branche principale
+      - main
   schedule:
     - cron: "1 0 * * *"
   workflow_dispatch:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # utile si tu as des dates de commit
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -24,7 +24,7 @@ jobs:
           extended: true
 
       - name: Build Hugo
-        run: hugo --minify
+        run: hugo --source "${{ github.workspace }}" --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
