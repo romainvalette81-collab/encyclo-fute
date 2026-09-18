@@ -2,9 +2,9 @@
 <h1>Catégories</h1>
 
 <ul>
-  {{ range .Data.Terms }}
+  {{ range .Data.Terms.Alphabetical }}
     <li>
-      <a href="{{ .Permalink }}">{{ .Title }} ({{ .Count }})</a>
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a>
     </li>
   {{ end }}
 </ul>
