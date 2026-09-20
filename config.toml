@@ -1,7 +1,9 @@
 baseURL = "https://romainvalette81-collab.github.io/encyclo-fute/"
 languageCode = "fr"
 title = "Encyclo Futé"
-paginate = 10
+pagination:
+  pagerSize: 10
+
 buildFuture = false
 
 # Important pour GitHub Pages en sous-dossier
