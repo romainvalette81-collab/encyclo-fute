@@ -1,4 +1,5 @@
-baseURL = "https://romainvalette81-collab.github.io/encyclo-fute/"
+baseURL = "https://encyclo-fute.pages.dev/"
+
 languageCode = "fr"
 title = "Encyclo Futé"
 [pagination]
