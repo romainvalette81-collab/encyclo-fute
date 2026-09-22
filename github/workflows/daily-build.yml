@@ -1,0 +1,30 @@
+name: Daily Cloudflare Trigger
+
+on:
+  schedule:
+    - cron: "0 1 * * *"   # Tous les jours à 01:00 du matin (heure UTC)
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Touch trigger file
+        run: |
+          echo "$(date)" > .cloudflare-trigger
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "Daily Build Bot"
+          git config --global user.email "bot@example.com"
+          git add .cloudflare-trigger
+          git commit -m "Daily Cloudflare Trigger" || echo "No changes to commit"
+
+      - name: Push changes
+        run: |
+          git push
+          
