@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<section class="home-hero">
+  <h1>Encyclo Futé</h1>
+  <p>Comprendre simplement les choses du quotidien.</p>
+</section>
+
+<section class="home-latest">
+  <h2>Derniers articles</h2>
+  <ul>
+    {{ range first 6 (where .Site.RegularPages "Type" "post") }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="date">{{ .Date.Format "02/01/2006" }}</span>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
+<section class="home-categories">
+  <h2>Catégories</h2>
+  <ul>
+    {{ range .Site.Taxonomies.categories }}
+      <li>
+        <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
+<section class="home-automobile">
+  <h2>Automobile</h2>
+  <p>Comprendre et entretenir sa voiture : FAP, voyants, entretien, mécanique simple.</p>
+
+  <ul>
+    {{ range first 6 (where .Site.RegularPages "Section" "automobile") }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+
+  <p>
+    <a href="/automobile/">Voir tous les articles Automobile</a>
+  </p>
+</section>
+
+{{ end }}
