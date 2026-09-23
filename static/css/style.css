@@ -1,174 +1,59 @@
 /* --------------------------------------------------
-   BASE
+   ASTUCE FUTÉE (premium minimaliste)
 -------------------------------------------------- */
 
-body {
-  font-family: system-ui, -apple-system, sans-serif;
-  max-width: 700px;
-  margin: auto;
+.astuce-futee {
+  margin-top: 40px;
   padding: 20px;
-  line-height: 1.6;
-  color: #222;
-  background: #fff;
+  border-left: 4px solid #1a5fad;
+  background: #f7f9fc;
+  border-radius: 6px;
 }
 
-a {
+.astuce-futee h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
   color: #1a5fad;
-  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-  line-height: 1.3;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-/* --------------------------------------------------
-   HEADER
--------------------------------------------------- */
-
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 8px 16px;
-}
-
-nav a {
-  text-decoration: none;
+.astuce-futee p {
+  margin: 0;
   color: #333;
 }
 
-nav a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-nav img {
-  height: 40px;
-  margin-right: 12px;
-}
 
 /* --------------------------------------------------
-   FOOTER
+   LIENS INTERNES (premium minimaliste)
 -------------------------------------------------- */
 
-footer {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 0.9em;
-  color: #666;
+.liens-internes {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
 }
 
-/* --------------------------------------------------
-   HOME PAGE (premium minimaliste)
--------------------------------------------------- */
-
-.home-hero {
-  text-align: center;
-  margin: 40px 0 50px;
-}
-
-.home-hero h1 {
-  font-size: 2.4rem;
+.liens-internes h3 {
   margin-bottom: 10px;
-}
-
-.home-hero p {
   font-size: 1.2rem;
-  color: #555;
+  color: #222;
 }
 
-section.home-block {
-  margin: 50px 0;
-}
-
-section.home-block h2 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-}
-
-section.home-block ul {
+.liens-internes ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-section.home-block li {
-  margin-bottom: 10px;
+.liens-internes li {
+  margin: 6px 0;
 }
 
-section.home-block a {
+.liens-internes a {
   color: #1a5fad;
+  text-decoration: none;
 }
 
-section.home-block a:hover {
+.liens-internes a:hover {
   text-decoration: underline;
-}
-
-.home-block .date {
-  font-size: 0.85rem;
-  color: #777;
-  margin-left: 6px;
-}
-
-/* --------------------------------------------------
-   ARTICLES
--------------------------------------------------- */
-
-article {
-  margin-bottom: 40px;
-}
-
-article h1 {
-  font-size: 2rem;
-}
-
-article h2 {
-  font-size: 1.4rem;
-}
-
-article ul {
-  padding-left: 20px;
-}
-
-article li {
-  margin-bottom: 8px;
-}
-
-/* --------------------------------------------------
-   RESPONSIVE
--------------------------------------------------- */
-
-@media (max-width: 600px) {
-  body {
-    padding: 15px;
-  }
-
-  .home-hero h1 {
-    font-size: 2rem;
-  }
-
-  .home-hero p {
-    font-size: 1rem;
-  }
-
-  section.home-block h2 {
-    font-size: 1.4rem;
-  }
 }
