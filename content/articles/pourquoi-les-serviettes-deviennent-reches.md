@@ -52,8 +52,6 @@ Avec les lavages :
 - la fibre perd son gonflant  
 - la serviette semble plus dure  
 
-C’est un phénomène naturel, mais amplifié par le calcaire et l’assouplissant.
-
 ---
 
 ## Le sèche‑linge peut aggraver… ou améliorer
@@ -71,62 +69,4 @@ Si :
 
 ## Le séchage à l’air libre
 
-Le séchage à l’air libre peut rendre les serviettes plus rêches, surtout :
-- en extérieur  
-- par temps sec  
-- avec du vent  
-
-L’eau s’évapore trop vite → fibres rigides.
-
----
-
-## Comment éviter que les serviettes deviennent rêches ?
-
-### ✔ Laver sans assouplissant  
-C’est la règle numéro 1.
-
-### ✔ Ajouter du vinaigre blanc  
-Dans le bac assouplissant :
-- élimine le calcaire  
-- assouplit naturellement  
-- n’a aucune odeur après séchage  
-
-### ✔ Laver à 40°C  
-Température idéale pour :
-- éliminer les résidus  
-- préserver les fibres  
-
-### ✔ Ne pas surcharger la machine  
-Les serviettes doivent pouvoir bouger pour être bien rincées.
-
-### ✔ Utiliser le sèche‑linge avec modération  
-Cycle doux → serviettes plus moelleuses.
-
----
-
-## Comment rattraper des serviettes déjà rêches ?
-
-### 1. Lavage “reset”
-- 1 cycle à 60°C  
-- 1 verre de vinaigre blanc  
-- pas d’assouplissant  
-
-### 2. Séchage doux au sèche‑linge  
-Quelques minutes suffisent pour regonfler les fibres.
-
-### 3. Trempage anti‑calcaire  
-- eau chaude  
-- vinaigre blanc  
-- 1 heure  
-- rinçage + séchage  
-
-Très efficace pour les serviettes anciennes.
-
----
-
-## Liens internes utiles
-
-- [Pourquoi le linge sent mauvais après lavage ?](../pourquoi-le-linge-sent-mauvais-apres-lavage/)
-- [Pourquoi les vêtements rétrécissent au lavage ?](../pourquoi-les-vetements-retrecissent-au-lavage/)
-- [Pourquoi le pain durcit ?](../pourquoi-le-pain-durcit/)
-- [Articles du quotidien](../)
+Le séchage à l’air libre peut rendre les serviettes plus
