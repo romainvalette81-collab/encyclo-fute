@@ -1,8 +1,17 @@
+{{/* Liens internes automatiques - Encyclo Futé */}}
+
+{{ $current := . }}
+{{ $section := .Section }}
+{{ $pages := where site.RegularPages "Section" $section }}
+{{ $related := $pages | where "Permalink" "!=" $current.Permalink | first 5 }}
+
+{{ if gt (len $related) 0 }}
 <div class="liens-internes">
   <h3>Liens internes</h3>
   <ul>
-    {{ range .Params.liens }}
-      <li><a href="{{ .url }}">{{ .titre }}</a></li>
+    {{ range $related }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ul>
 </div>
+{{ end }}
