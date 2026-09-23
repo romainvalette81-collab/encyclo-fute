@@ -11,7 +11,6 @@
     {{ range first 6 (where .Site.RegularPages "Type" "post") }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <span class="date">{{ .Date.Format "02/01/2006" }}</span>
       </li>
     {{ end }}
   </ul>
