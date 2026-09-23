@@ -1,1 +1,8 @@
-<!-- Liens internes (placeholder) -->
+<div class="liens-internes">
+  <h3>Liens internes</h3>
+  <ul>
+    {{ range .Params.liens }}
+      <li><a href="{{ .url }}">{{ .titre }}</a></li>
+    {{ end }}
+  </ul>
+</div>
