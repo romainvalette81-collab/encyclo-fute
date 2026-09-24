@@ -1,8 +1,44 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
 
+<article class="article">
+
+  <!-- H1 : toujours celui du contenu -->
+  <h1>{{ .Title }}</h1>
+
+  <!-- INTRO COURTE -->
+  {{ with .Params.intro }}
+    <p class="intro">{{ . }}</p>
+  {{ end }}
+
+  <!-- CONTENU PRINCIPAL -->
+  <div class="article-content">
+    {{ .Content }}
+  </div>
+
+  <!-- FAQ AUTOMATIQUE -->
+  {{ if .Params.faq }}
+  <section class="faq">
+    <h2>Questions fréquentes</h2>
+    <ul>
+      {{ range .Params.faq }}
+        <li>
+          <strong>{{ .question }}</strong><br>
+          {{ .answer }}
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <!-- ASTUCE FUTÉE -->
   {{ partial "astuce-futee.html" . }}
 
+  <!-- LIENS INTERNES -->
   {{ partial "liens-internes.html" . }}
+
+  <!-- BLOC ALIEXPRESS -->
+  {{ partial "aliexpress.html" . }}
+
+</article>
+
 {{ end }}
