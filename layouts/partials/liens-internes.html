@@ -1,29 +1,13 @@
-{{/* Liens internes automatiques - version stable */}}
+<section class="liens-internes">
+  <h2>Liens internes utiles</h2>
 
-{{ $current := . }}
-{{ $section := .Section }}
+  {{/* Sélection des pages valides (vraies pages Hugo) */}}
+  {{ $pages := where .Site.RegularPages "Kind" "page" }}
 
-{{/* Si la page n'a pas de section (ex: /about/), on prend la section "articles" */}}
-{{ if not $section }}
-  {{ $section = "articles" }}
-{{ end }}
+  {{/* Exclure la page actuelle */}}
+  {{ $pages = where $pages "Permalink" "!=" .Permalink }}
 
-{{/* On récupère toutes les pages de cette section */}}
-{{ $pages := where site.RegularPages "Section" $section }}
-
-{{/* On filtre pour exclure la page actuelle */}}
-{{ $related := where $pages "Permalink" "!=" $current.Permalink }}
-
-{{/* On limite à 5 résultats */}}
-{{ $related := first 5 $related }}
-
-{{ if gt (len $related) 0 }}
-<div class="liens-internes">
-  <h3>Liens internes</h3>
-  <ul>
-    {{ range $related }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
-</div>
-{{ end }}
+  {{/* Si l’article a une catégorie, on privilégie les pages de la même catégorie */}}
+  {{ $cat := "" }}
+  {{ if .Params.categories }}
+    {{ $cat = index .Params.categories
