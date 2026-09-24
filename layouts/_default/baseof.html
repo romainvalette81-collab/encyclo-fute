@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
 
+  <!-- VIEWPORT -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- TITLE dynamique -->
   <title>
     {{ if .IsHome }}
@@ -12,7 +15,7 @@
     {{ end }}
   </title>
 
-  <!-- META DESCRIPTION (fallback si absente) -->
+  <!-- META DESCRIPTION -->
   {{ if .Description }}
     <meta name="description" content="{{ .Description }}">
   {{ else }}
@@ -22,16 +25,21 @@
   <!-- CANONICAL -->
   <link rel="canonical" href="{{ .Permalink }}">
 
-  <!-- OPEN GRAPH minimaliste -->
+  <!-- OPEN GRAPH -->
+  {{ if .IsHome }}
+    <meta property="og:type" content="website">
+  {{ else }}
+    <meta property="og:type" content="article">
+  {{ end }}
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}Encyclo Futé : des explications simples et fiables pour comprendre le quotidien.{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:type" content="article">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 
   <!-- JSON-LD : WebSite -->
+  {{ if .IsHome }}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,48 +48,30 @@
     "url": "https://encyclo-fute.pages.dev/"
   }
   </script>
-
-  <!-- JSON-LD : Breadcrumb -->
-  {{ if .IsPage }}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "https://encyclo-fute.pages.dev/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "{{ .Title }}",
-        "item": "{{ .Permalink }}"
-      }
-    ]
-  }
-  </script>
   {{ end }}
 
-  <!-- JSON-LD : Article -->
+  <!-- JSON-LD : Article enrichi -->
   {{ if .IsPage }}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
+    "mainEntityOfPage": "{{ .Permalink }}",
     "headline": "{{ .Title }}",
     "description": "{{ with .Description }}{{ . }}{{ else }}Explication simple et fiable sur le sujet.{{ end }}",
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05" }}",
     "author": {
       "@type": "Person",
-      "name": "Romain"
+      "name": "Encyclo Futé"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Encyclo Futé"
-    },
-    "url": "{{ .Permalink }}"
+    }
+    {{ with .Params.image }},
+    "image": "{{ . }}"
+    {{ end }}
   }
   </script>
   {{ end }}
@@ -106,7 +96,9 @@
     {{ block "main" . }}{{ end }}
   </main>
 
-  {{ partial "footer.html" . }}
+  <footer>
+    <p>© Encyclo Futé — {{ now.Year }}</p>
+  </footer>
 
 </body>
 </html>
