@@ -45,7 +45,9 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Encyclo Futé",
-    "url": "https://encyclo-fute.pages.dev/"
+    "url": "https://encyclo-fute.pages.dev/",
+    "inLanguage": "fr",
+    "isAccessibleForFree": true
   }
   </script>
   {{ end }}
@@ -61,6 +63,9 @@
     "description": "{{ with .Description }}{{ . }}{{ else }}Explication simple et fiable sur le sujet.{{ end }}",
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05" }}",
+    "inLanguage": "fr",
+    "isAccessibleForFree": true,
+    "copyrightYear": "{{ now.Year }}",
     "author": {
       "@type": "Person",
       "name": "Encyclo Futé"
