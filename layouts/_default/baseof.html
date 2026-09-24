@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- VIEWPORT -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- TITLE dynamique -->
   <title>
     {{ if .IsHome }}
       Encyclo Futé — Comprendre le quotidien simplement
@@ -15,17 +13,14 @@
     {{ end }}
   </title>
 
-  <!-- META DESCRIPTION -->
   {{ if .Description }}
     <meta name="description" content="{{ .Description }}">
   {{ else }}
     <meta name="description" content="Encyclo Futé : des explications simples et fiables pour comprendre le quotidien.">
   {{ end }}
 
-  <!-- CANONICAL -->
   <link rel="canonical" href="{{ .Permalink }}">
 
-  <!-- OPEN GRAPH -->
   {{ if .IsHome }}
     <meta property="og:type" content="website">
   {{ else }}
@@ -35,10 +30,8 @@
   <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}Encyclo Futé : des explications simples et fiables pour comprendre le quotidien.{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 
-  <!-- JSON-LD : WebSite -->
   {{ if .IsHome }}
   <script type="application/ld+json">
   {
@@ -52,7 +45,6 @@
   </script>
   {{ end }}
 
-  <!-- JSON-LD : Article enrichi -->
   {{ if .IsPage }}
   <script type="application/ld+json">
   {
@@ -101,9 +93,7 @@
     {{ block "main" . }}{{ end }}
   </main>
 
-  <footer>
-    <p>© Encyclo Futé — {{ now.Year }}</p>
-  </footer>
+  {{ partial "footer.html" . }}
 
 </body>
 </html>
