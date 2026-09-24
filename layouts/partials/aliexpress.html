@@ -1,0 +1,7 @@
+{{ if .Params.aliexpress }}
+<section class="aliexpress">
+  <h2>Bon plan AliExpress</h2>
+  <p>{{ .Params.aliexpress.text }}</p>
+  <a href="{{ .Params.aliexpress.url }}" target="_blank" rel="nofollow">Voir le produit</a>
+</section>
+{{ end }}
