@@ -1,4 +1,6 @@
-<div class="astuce-futee">
-  <h3>Astuce futée 🟩</h3>
-  <p>{{ .Params.astuce | default "Une petite astuce simple et efficace pour vous faciliter le quotidien." }}</p>
-</div>
+{{ if .Params.astuce }}
+<section class="astuce-futee">
+  <h2>Astuce futée</h2>
+  <p>{{ .Params.astuce }}</p>
+</section>
+{{ end }}
