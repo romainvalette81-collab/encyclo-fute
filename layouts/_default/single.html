@@ -13,11 +13,11 @@
   </div>
 
   <!-- FAQ AUTOMATIQUE -->
-  {{ if .Params.faq }}
+  {{ with .Params.faq }}
   <section class="faq">
     <h2>Questions fréquentes</h2>
     <ul>
-      {{ range .Params.faq }}
+      {{ range . }}
         <li>
           <strong>{{ .question }}</strong><br>
           {{ .answer }}
