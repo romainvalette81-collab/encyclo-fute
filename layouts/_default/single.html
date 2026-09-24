@@ -2,17 +2,14 @@
 
 <article class="article">
 
-  <!-- INTRO COURTE -->
   {{ with .Params.intro }}
     <p class="intro">{{ . }}</p>
   {{ end }}
 
-  <!-- CONTENU PRINCIPAL -->
   <div class="article-content">
     {{ .Content }}
   </div>
 
-  <!-- FAQ AUTOMATIQUE -->
   {{ with .Params.faq }}
   <section class="faq">
     <h2>Questions fréquentes</h2>
@@ -27,13 +24,10 @@
   </section>
   {{ end }}
 
-  <!-- ASTUCE FUTÉE -->
   {{ partial "astuce-futee.html" . }}
 
-  <!-- LIENS INTERNES -->
   {{ partial "liens-internes.html" . }}
 
-  <!-- BLOC ALIEXPRESS -->
   {{ partial "aliexpress.html" . }}
 
 </article>
