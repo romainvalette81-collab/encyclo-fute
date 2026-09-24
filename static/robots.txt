@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://encyclo-fute.pages.dev/sitemap.xml
