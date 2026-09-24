@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="fr">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-    <title>{{ block "title" . }}{{ .Title }} — Encyclo Futé{{ end }}</title>
+  <!-- TITLE dynamique -->
+  <title>
+    {{ if .IsHome }}
+      Encyclo Futé — Comprendre le quotidien simplement
+    {{ else }}
+      {{ .Title }} — Encyclo Futé
+    {{ end }}
+  </title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <!-- META DESCRIPTION (fallback si absente) -->
+  {{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
+  {{ else }}
+    <meta name="description" content="Encyclo Futé : des explications simples et fiables pour comprendre le quotidien.">
+  {{ end }}
 
-    <!-- Favicon -->
-    <link rel="icon" href="{{ "logo.png" | relURL }}" type="image/png">
+  <!-- CANONICAL -->
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- OPEN GRAPH minimaliste -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}Encyclo Futé : des explications simples et fiables pour comprendre le quotidien.{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="article">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JSON-LD : WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Encyclo Futé",
+    "url": "https://encyclo-fute.pages.dev/"
+  }
+  </script>
+
+  <!-- JSON-LD : Breadcrumb -->
+  {{ if .IsPage }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://encyclo-fute.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ .Title }}",
+        "item": "{{ .Permalink }}"
+      }
+    ]
+  }
+  </script>
+  {{ end }}
+
+  <!-- JSON-LD : Article -->
+  {{ if .IsPage }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ .Title }}",
+    "description": "{{ with .Description }}{{ . }}{{ else }}Explication simple et fiable sur le sujet.{{ end }}",
+    "author": {
+      "@type": "Person",
+      "name": "Romain"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Encyclo Futé"
+    },
+    "url": "{{ .Permalink }}"
+  }
+  </script>
+  {{ end }}
+
 </head>
 
 <body>
 
-    {{ partial "header.html" . }}
+  <header>
+    <nav>
+      <a href="/">Encyclo Futé</a>
+      <a href="/encyclopedie/">Encyclopédie</a>
+      <a href="/guides/">Guides pratiques</a>
+      <a href="/articles/">Articles</a>
+      <a href="/categories/">Catégories</a>
+      <a href="/about/">À propos</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-        {{ block "main" . }}{{ end }}
-    </main>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
 
-    {{ partial "footer.html" . }}
+  <footer>
+    <p>© Encyclo Futé — {{ now.Year }}</p>
+  </footer>
 
 </body>
-</html>
+      </html>
+      
