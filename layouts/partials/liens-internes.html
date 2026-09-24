@@ -1,0 +1,37 @@
+<section class="liens-internes">
+  <h3>Liens internes utiles</h3>
+
+  {{ $pages := where .Site.RegularPages "Kind" "page" }}
+  {{ $pages = where $pages "Permalink" "!=" .Permalink }}
+
+  {{ $cat := "" }}
+  {{ if .Params.categories }}
+    {{ $cat = index .Params.categories 0 }}
+  {{ end }}
+
+  {{ if $cat }}
+    {{ $related := where $pages "Params.categories" "intersect" (slice $cat) }}
+
+    {{ if gt (len $related) 0 }}
+      <ul>
+        {{ range first 3 $related }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <ul>
+        {{ range first 3 $pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+  {{ else }}
+    <ul>
+      {{ range first 3 $pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+</section>
