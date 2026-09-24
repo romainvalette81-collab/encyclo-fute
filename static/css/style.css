@@ -1,4 +1,92 @@
 /* --------------------------------------------------
+   BASE (premium minimaliste)
+-------------------------------------------------- */
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #222;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Liens */
+a {
+  color: #1a5fad;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Titres */
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Paragraphes */
+p {
+  margin-bottom: 15px;
+}
+
+/* --------------------------------------------------
+   HEADER
+-------------------------------------------------- */
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 18px;
+}
+
+nav a {
+  color: #333;
+}
+nav a:hover {
+  color: #000;
+}
+
+/* --------------------------------------------------
+   CONTENU PRINCIPAL
+-------------------------------------------------- */
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding-bottom: 40px;
+}
+
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------
    ASTUCE FUTÉE (premium minimaliste)
 -------------------------------------------------- */
 
@@ -21,7 +109,6 @@
   margin: 0;
   color: #333;
 }
-
 
 /* --------------------------------------------------
    LIENS INTERNES (premium minimaliste)
@@ -51,9 +138,27 @@
 
 .liens-internes a {
   color: #1a5fad;
-  text-decoration: none;
 }
-
 .liens-internes a:hover {
   text-decoration: underline;
 }
+
+/* --------------------------------------------------
+   EFFET LOUPE SUR MOBILE (premium)
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+  body {
+    transform: scale(1.06);
+    transform-origin: top center;
+  }
+
+  main {
+    font-size: 1.06em;
+    line-height: 1.55;
+  }
+
+  nav {
+    gap: 10px 14px;
+  }
+   }
