@@ -1,9 +1,21 @@
-{{/* Liens internes automatiques - Encyclo Futé */}}
+{{/* Liens internes automatiques - version stable */}}
 
 {{ $current := . }}
 {{ $section := .Section }}
+
+{{/* Si la page n'a pas de section (ex: /about/), on prend la section "articles" */}}
+{{ if not $section }}
+  {{ $section = "articles" }}
+{{ end }}
+
+{{/* On récupère toutes les pages de cette section */}}
 {{ $pages := where site.RegularPages "Section" $section }}
-{{ $related := $pages | where "Permalink" "!=" $current.Permalink | first 5 }}
+
+{{/* On filtre pour exclure la page actuelle */}}
+{{ $related := where $pages "Permalink" "!=" $current.Permalink }}
+
+{{/* On limite à 5 résultats */}}
+{{ $related := first 5 $related }}
 
 {{ if gt (len $related) 0 }}
 <div class="liens-internes">
