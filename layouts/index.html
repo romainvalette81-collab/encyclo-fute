@@ -8,12 +8,13 @@
 <section class="home-latest">
   <h2>Derniers articles</h2>
   <ul>
-    {{ range first 6 (where .Site.RegularPages "Type" "post") }}
+    {{ range first 8 .Site.RegularPages.ByDate.Reverse }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
     {{ end }}
   </ul>
+  <p><a href="/articles/">Voir tous les articles →</a></p>
 </section>
 
 <section class="home-categories">
@@ -32,7 +33,7 @@
   <p>Comprendre et entretenir sa voiture : FAP, voyants, entretien, mécanique simple.</p>
 
   <ul>
-    {{ range first 6 (where .Site.RegularPages "Section" "automobile") }}
+    {{ range first 6 (where .Site.RegularPages "Section" "automobile").ByDate.Reverse }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
