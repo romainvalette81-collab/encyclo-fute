@@ -1,6 +1,7 @@
 ---
 title: "Conditions d’utilisation"
 description: "Conditions d’utilisation du site Encyclo Futé."
+url: "/conditions-utilisation/"
 ---
 
 # Conditions d’utilisation
