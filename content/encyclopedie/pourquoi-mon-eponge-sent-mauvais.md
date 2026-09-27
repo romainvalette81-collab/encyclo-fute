@@ -1,11 +1,13 @@
 ---
-
-title: "Pourquoi mon éponge de cuisine sent mauvais ? Les causes et les solutions"
-description: "Pourquoi une éponge de cuisine sent-elle mauvais ? Découvrez les causes de cette odeur, les bons gestes pour limiter les bactéries et quand remplacer l'éponge."
+title: "Pourquoi mon éponge sent mauvais ?"
+description: "..."
+slug: "pourquoi-mon-eponge-sent-mauvais"
+category: "Encyclopédie"
+tags: ["maison", "odeurs", "éponge"]
 date: 2026-09-27
-categories: ["Encyclopédie", "Maison"]
-tags: ["éponge", "cuisine", "hygiène", "bactéries", "nettoyage", "maison"]
-draft: false
+keywords: "..."
+---
+
 
 Pourquoi mon éponge de cuisine sent mauvais ? Les causes et les solutions
 
