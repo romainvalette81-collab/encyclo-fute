@@ -158,7 +158,7 @@ Les serviettes, certains vêtements de sport et certains textiles synthétiques 
 
 C'est notamment une raison pour laquelle une serviette peut parfois sembler propre mais ne pas avoir la même sensation après séchage.
 
-Sur Encyclo Futé, vous pouvez d'ailleurs retrouver notre explication sur [pourquoi les serviettes absorbent mieux après plusieurs lavages]({{< relref "pourquoi-les-serviettes-absorbent-mieux-apres-plusieurs-lavages.md" >}}).
+Sur Encyclo Futé, vous pouvez d'ailleurs retrouver notre explication sur [pourquoi les serviettes absorbent mieux après plusieurs lavages].
 
 Le type de textile fait donc partie des éléments à prendre en compte lorsqu'un seul groupe de vêtements pose problème.
 
@@ -253,7 +253,7 @@ Après utilisation, une serviette mal séchée reste humide longtemps. Si elle e
 
 C'est aussi l'occasion de distinguer deux questions différentes : l'absorption d'une serviette et son odeur.
 
-Pour comprendre le premier phénomène, consultez [notre article sur l'absorption des serviettes après plusieurs lavages]({{< relref "pourquoi-les-serviettes-absorbent-mieux-apres-plusieurs-lavages.md" >}}).
+Pour comprendre le premier phénomène, consultez [notre article sur l'absorption des serviettes après plusieurs lavages].
 
 Et si l'odeur vient de l'humidité de la maison ?
 
@@ -263,7 +263,7 @@ Si le linge sèche lentement dans une pièce peu ventilée, l'humidité reste pl
 
 Ce phénomène peut également expliquer certains problèmes de condensation sur les surfaces froides.
 
-Pour comprendre pourquoi une vitre devient opaque lorsqu'elle est couverte de buée, consultez [notre article consacré à la buée et à la condensation]({{< relref "pourquoi-les-vitres-deviennent-opaques-avec-la-buee.md" >}}).
+Pour comprendre pourquoi une vitre devient opaque lorsqu'elle est couverte de buée, consultez [notre article consacré à la buée et à la condensation].
 
 Le problème n'est donc pas toujours uniquement le lave-linge : le séchage fait partie de la chaîne complète.
 
