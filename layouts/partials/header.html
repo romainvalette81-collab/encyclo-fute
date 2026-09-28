@@ -1,8 +1,9 @@
-<nav style="display:flex; gap:20px; align-items:center; padding:10px 0;">
+<header>
+  <nav aria-label="Navigation principale" style="display:flex; gap:20px; align-items:center; padding:10px 0; flex-wrap:wrap;">
 
     <!-- LOGO -->
-    <a href="{{ "/" | relURL }}">
-        <img src="{{ "logo.png" | relURL }}" alt="Logo Encyclo Futé" style="height:40px;">
+    <a href="{{ "/" | relURL }}" aria-label="Accueil Encyclo Futé">
+      <img src="{{ "logo.png" | relURL }}" alt="Logo Encyclo Futé" style="height:40px; display:block;">
     </a>
 
     <!-- MENU -->
@@ -13,4 +14,5 @@
     <a href="{{ "about/" | relURL }}">À propos</a>
     <a href="{{ "contact/" | relURL }}">Contact</a>
 
-</nav>
+  </nav>
+</header>
