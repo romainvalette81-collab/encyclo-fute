@@ -2,7 +2,7 @@
 title: "Pourquoi les cheveux deviennent gras si vite après le shampoing ? L’explication claire"
 description: "Vous lavez vos cheveux et 24 à 48 h plus tard ils sont déjà gras. Voici les vraies causes et les gestes qui changent vraiment la donne."
 slug: "pourquoi-les-cheveux-deviennent-gras-si-vite"
-date: 2026-10-03
+date: 2026-10-02
 categories: ["Encyclopédie", "Bien-Être", "Quotidien"]
 ---
 
