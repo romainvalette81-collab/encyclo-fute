@@ -2,7 +2,7 @@
 title: "Pourquoi les placards sentent le renfermé et comment y mettre fin définitivement"
 description: "Odeur de renfermé dans les placards et armoires ? Voici les causes réelles et la méthode simple pour retrouver une odeur neutre et fraîche."
 slug: "pourquoi-les-placards-sentent-le-renferme"
-date: 2026-10-03
+date: 2026-10-02
 categories: ["Maison", "Organisation", "Quotidien"]
 ---
 
