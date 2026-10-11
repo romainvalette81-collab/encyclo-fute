@@ -1,24 +1,24 @@
 {{ define "main" }}
 
 <section class="home-hero">
-  <h1>Encyclo Futé</h1>
-  <p>Comprendre simplement les choses du quotidien.</p>
-</section>
-
-<section class="home-latest">
+  <h1>Bienvenue sur Les Petits Pourquoi</h1>
+  <p>Des explications simples et des guides pratiques pour mieux comprendre les choses du quotidien.</p>
+  <p>
+    Pourquoi les choses fonctionnent-elles ainsi ? Comment résoudre un problème du quotidien ?
+    Retrouvez des réponses claires, sans jargon inutile.
+  </p>
+</section><section class="home-latest">
   <h2>Derniers articles</h2>
   <ul>
-    {{ range first 8 .Site.RegularPages.ByDate.Reverse }}
+    {{ range first 8 (where .Site.RegularPages "Section" "articles").ByDate.Reverse }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>
     {{ end }}
   </ul>
   <p><a href="/articles/">Voir tous les articles →</a></p>
-</section>
-
-<section class="home-categories">
-  <h2>Catégories</h2>
+</section><section class="home-categories">
+  <h2>Explorer les catégories</h2>
   <ul>
     {{ range .Site.Taxonomies.categories }}
       <li>
@@ -26,23 +26,17 @@
       </li>
     {{ end }}
   </ul>
-</section>
-
-<section class="home-automobile">
-  <h2>Automobile</h2>
-  <p>Comprendre et entretenir sa voiture : FAP, voyants, entretien, mécanique simple.</p>
-
-  <ul>
-    {{ range first 6 (where .Site.RegularPages "Section" "automobile").ByDate.Reverse }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
-
-  <p>
-    <a href="/automobile/">Voir tous les articles Automobile</a>
-  </p>
-</section>
-
-{{ end }}
+  <p><a href="/categories/">Voir toutes les catégories →</a></p>
+</section><section class="home-encyclopedie">
+  <h2>L’Encyclopédie</h2>
+  <p>Des fiches accessibles pour comprendre les objets, les phénomènes et les situations qui nous entourent.</p>
+  <p><a href="/encyclopedie/">Explorer l’Encyclopédie →</a></p>
+</section><section class="home-guides">
+  <h2>Les guides pratiques</h2>
+  <p>Des conseils étape par étape pour résoudre un problème, effectuer une démarche ou trouver une solution concrète.</p>
+  <p><a href="/guides/">Découvrir les guides pratiques →</a></p>
+</section><section class="home-about">
+  <h2>À propos</h2>
+  <p>Les Petits Pourquoi a pour objectif de rendre les sujets du quotidien plus faciles à comprendre grâce à des contenus clairs et structurés.</p>
+  <p><a href="/about/">Découvrir le projet →</a></p>
+</section>{{ end }}
