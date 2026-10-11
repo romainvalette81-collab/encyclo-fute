@@ -7,7 +7,107 @@
     Pourquoi les choses fonctionnent-elles ainsi ? Comment résoudre un problème du quotidien ?
     Retrouvez des réponses claires, sans jargon inutile.
   </p>
-</section><section class="home-latest">
+</section>
+
+<section class="home-assistant">
+  <h2>Une question ?</h2>
+  <p>Pose ta question : l’assistant t’aidera à comprendre et te proposera des articles utiles.</p>
+
+  <form id="assistant-form">
+    <label for="assistant-question">Ta question</label>
+    <div class="assistant-controls">
+      <input
+        id="assistant-question"
+        name="question"
+        type="text"
+        maxlength="500"
+        placeholder="Pourquoi le ciel est-il bleu ?"
+        required
+      >
+      <button type="submit" id="assistant-submit">Poser ma question</button>
+    </div>
+  </form>
+
+  <p id="assistant-status" role="status" aria-live="polite"></p>
+  <div id="assistant-answer" hidden>
+    <h3>La réponse</h3>
+    <p id="assistant-text"></p>
+    <ul id="assistant-links"></ul>
+  </div>
+</section>
+
+<script>
+(() => {
+  const form = document.getElementById("assistant-form");
+  if (!form) return;
+
+  const input = document.getElementById("assistant-question");
+  const button = document.getElementById("assistant-submit");
+  const status = document.getElementById("assistant-status");
+  const answerBox = document.getElementById("assistant-answer");
+  const answerText = document.getElementById("assistant-text");
+  const linksList = document.getElementById("assistant-links");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const question = input.value.trim();
+    if (!question) return;
+
+    button.disabled = true;
+    status.textContent = "Je cherche une réponse…";
+    answerBox.hidden = true;
+    answerText.textContent = "";
+    linksList.replaceChildren();
+
+    try {
+      const response = await fetch("/api/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Impossible d’obtenir une réponse.");
+      }
+
+      answerText.textContent = data.answer || "Je n’ai pas de réponse pour le moment.";
+
+      if (Array.isArray(data.links)) {
+        data.links.forEach((item) => {
+          if (
+            !item ||
+            typeof item.title !== "string" ||
+            typeof item.url !== "string"
+          ) return;
+
+          const url = new URL(item.url, window.location.origin);
+          if (url.origin !== window.location.origin) return;
+
+          const li = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = url.pathname + url.search + url.hash;
+          link.textContent = item.title;
+          li.appendChild(link);
+          linksList.appendChild(li);
+        });
+      }
+
+      answerBox.hidden = false;
+      status.textContent = "";
+    } catch (error) {
+      status.textContent =
+        error.message || "Un problème est survenu. Réessaie dans un instant.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+})();
+</script>
+
+<section class="home-latest">
   <h2>Derniers articles</h2>
   <ul>
     {{ range first 8 (where .Site.RegularPages "Section" "articles").ByDate.Reverse }}
@@ -17,7 +117,9 @@
     {{ end }}
   </ul>
   <p><a href="/articles/">Voir tous les articles →</a></p>
-</section><section class="home-categories">
+</section>
+
+<section class="home-categories">
   <h2>Explorer les catégories</h2>
   <ul>
     {{ range .Site.Taxonomies.categories }}
@@ -27,16 +129,24 @@
     {{ end }}
   </ul>
   <p><a href="/categories/">Voir toutes les catégories →</a></p>
-</section><section class="home-encyclopedie">
+</section>
+
+<section class="home-encyclopedie">
   <h2>L’Encyclopédie</h2>
   <p>Des fiches accessibles pour comprendre les objets, les phénomènes et les situations qui nous entourent.</p>
   <p><a href="/encyclopedie/">Explorer l’Encyclopédie →</a></p>
-</section><section class="home-guides">
+</section>
+
+<section class="home-guides">
   <h2>Les guides pratiques</h2>
   <p>Des conseils étape par étape pour résoudre un problème, effectuer une démarche ou trouver une solution concrète.</p>
   <p><a href="/guides/">Découvrir les guides pratiques →</a></p>
-</section><section class="home-about">
+</section>
+
+<section class="home-about">
   <h2>À propos</h2>
   <p>Les Petits Pourquoi a pour objectif de rendre les sujets du quotidien plus faciles à comprendre grâce à des contenus clairs et structurés.</p>
   <p><a href="/about/">Découvrir le projet →</a></p>
-</section>{{ end }}
+</section>
+
+{{ end }}
