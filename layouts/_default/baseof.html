@@ -1,56 +1,59 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="msvalidate.01" content="0E54D360A05AC52D09F633684D7AE39A" />  <title>
+
+  <meta name="msvalidate.01" content="0E54D360A05AC52D09F633684D7AE39A">
+
+  {{ $description := .Description | default .Site.Params.description }}
+
+  <title>
     {{ if .IsHome }}
       Les Petits Pourquoi — Comprendre simplement le quotidien
     {{ else }}
       {{ .Title }} — Les Petits Pourquoi
     {{ end }}
-  </title>{{ if .Description }}
-<meta name="description" content="{{ .Description }}">
-{{ else }}
-<meta name="description" content="{{ .Site.Params.description }}">
-{{ end }}
+  </title>
 
-  <link rel="canonical" href="{{ .Permalink }}">{{ if .IsHome }}
-<meta property="og:type" content="website">
-{{ else }}
-<meta property="og:type" content="article">
-{{ end }}
+  <meta name="description" content="{{ $description }}">
+
+  <link rel="canonical" href="{{ .Permalink }}">
 
   <meta property="og:site_name" content="Les Petits Pourquoi">
   <meta property="og:title" content="{{ .Title }} — Les Petits Pourquoi">
-  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }}">
-  <meta property="og:url" content="{{ .Permalink }}">  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">{{ if .IsHome }}
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+  {{ if .IsHome }}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Les Petits Pourquoi",
-    "url": "{{ .Site.BaseURL }}",
-    "description": "{{ .Site.Params.description }}",
+    "url": {{ .Site.BaseURL | jsonify }},
+    "description": {{ $description | jsonify }},
     "inLanguage": "fr",
     "isAccessibleForFree": true
   }
-  </script>{{ end }}
+  </script>
+  {{ end }}
 
-{{ if .IsPage }}
-
+  {{ if .IsPage }}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "mainEntityOfPage": "{{ .Permalink }}",
-    "headline": "{{ .Title }}",
-    "description": "{{ with .Description }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }}",
-    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+    "mainEntityOfPage": {{ .Permalink | jsonify }},
+    "headline": {{ .Title | jsonify }},
+    "description": {{ $description | jsonify }},
+    "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
     "inLanguage": "fr",
     "isAccessibleForFree": true,
-    "copyrightYear": "{{ now.Year }}",
     "author": {
       "@type": "Organization",
       "name": "Les Petits Pourquoi"
@@ -60,49 +63,29 @@
       "name": "Les Petits Pourquoi"
     }
     {{ with .Params.image }},
-    "image": "{{ . }}"
+    "image": {{ . | jsonify }}
     {{ end }}
   }
-  </script>  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "{{ $.Site.BaseURL }}"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "{{ .Section | title }}",
-        "item": "{{ printf "%s%s/" $.Site.BaseURL .Section }}"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "{{ .Title }}",
-        "item": "{{ .Permalink }}"
-      }
-    ]
-  }
-  </script>{{ end }}
+  </script>
+  {{ end }}
 
-</head><body>  <header>
-    <nav>
-      <a href="/">Les Petits Pourquoi</a>
-      <a href="/encyclopedie/">Encyclopédie</a>
-      <a href="/guides/">Guides pratiques</a>
-      <a href="/articles/">Articles</a>
-      <a href="/categories/">Catégories</a>
-      <a href="/about/">À propos</a>
-      <a href="/contact/">Contact</a>
+</head>
+
+<body>
+
+  <header>
+    <nav aria-label="Navigation principale">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{ end }}
     </nav>
-  </header>  <main>
+  </header>
+
+  <main>
     {{ block "main" . }}{{ end }}
-  </main>{{ partial "footer.html" . }}
+  </main>
+
+  {{ partial "footer.html" . }}
 
 </body>
-</html>
+  </html>
