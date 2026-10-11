@@ -3,6 +3,8 @@
 title: "À propos"
 description: "Découvrez Les Petits Pourquoi, un site consacré aux explications simples et pratiques du quotidien."
 
+---
+
 À propos de Les Petits Pourquoi
 
 Les Petits Pourquoi est un site indépendant qui aide à mieux comprendre les choses du quotidien.
