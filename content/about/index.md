@@ -1,35 +1,44 @@
 ---
+
 title: "À propos"
-description: "Encyclo Futé : le savoir du quotidien, simple, clair et accessible."
----
+description: "Les Petits Pourquoi : des explications claires, des guides pratiques et des informations accessibles pour mieux comprendre le quotidien."
 
-## À propos d’Encyclo Futé
+À propos de Les Petits Pourquoi
 
-Encyclo Futé est un site dédié au **savoir du quotidien**.
+Les Petits Pourquoi est un site consacré à la compréhension des choses du quotidien.
 
-L’objectif est simple : expliquer clairement ce qui nous entoure — la maison, l’auto, la tech, l’organisation, l’administratif — sans jargon et sans perte de temps.
+Son objectif est simple : expliquer clairement ce qui nous entoure — la maison, l’automobile, la technologie, l’organisation et les démarches administratives — sans jargon inutile ni perte de temps.
 
-### Pourquoi ce site ?
+Pourquoi ce site ?
 
-Beaucoup d’informations utiles sont noyées dans des textes trop longs, trop techniques ou trop vagues.  
-Encyclo Futé fait l’inverse :
+Les informations utiles sont parfois difficiles à trouver. Elles peuvent être trop longues, trop techniques ou manquer de réponses concrètes.
 
-- des **fiches courtes** et directes  
-- des **guides pratiques** actionnables  
-- un ton **clair**, accessible à tous  
+Les Petits Pourquoi privilégie une approche différente :
 
-Que tu cherches à comprendre un voyant sur le tableau de bord, à entretenir ta maison en 15 minutes, ou à mieux t’organiser, tu dois pouvoir trouver une réponse utile en quelques minutes.
+- Des explications claires pour comprendre l’essentiel.
+- Des guides pratiques pour avancer étape par étape.
+- Des articles accessibles pour approfondir les sujets du quotidien.
+- Une navigation simple pour trouver rapidement l’information recherchée.
 
-### Ce que tu trouveras ici
+Que vous souhaitiez comprendre un voyant sur un tableau de bord, mieux utiliser un équipement ou simplifier votre organisation, l’objectif est de vous apporter une réponse utile et compréhensible.
 
-- **Encyclopédie** : des explications simples sur les objets, notions et équipements du quotidien  
-- **Guides pratiques** : des méthodes concrètes à appliquer tout de suite  
-- **Articles** : des sujets de fond pour aller un peu plus loin  
-- **Catégories** : une navigation par thème (auto, maison, organisation, etc.)
+Ce que vous trouverez sur le site
 
-### L’esprit du projet
+- Encyclopédie : des explications sur les objets, les notions et les équipements du quotidien.
+- Guides pratiques : des méthodes concrètes à appliquer étape par étape.
+- Articles : des sujets développés pour mieux comprendre certaines questions.
+- Catégories : des contenus regroupés par thème pour faciliter la navigation.
 
-Encyclo Futé évolue en continu.  
-Le site reste volontairement minimaliste : pas de distraction, pas de surcharge, juste l’essentiel.
+Un site volontairement minimaliste
 
-Si une page t’aide à gagner du temps, à éviter une erreur ou à mieux comprendre quelque chose — alors elle a rempli son rôle.
+Les Petits Pourquoi privilégie la simplicité : une présentation épurée, des contenus structurés et une lecture sans distraction inutile.
+
+Le site évolue progressivement pour proposer des informations toujours plus utiles et accessibles.
+
+Si une page vous permet de gagner du temps, d’éviter une erreur ou de mieux comprendre quelque chose, elle a rempli son objectif.
+
+Une question ou une suggestion ?
+
+Vous souhaitez proposer un sujet, signaler une erreur ou poser une question ?
+
+Vous pouvez utiliser la "page Contact" (/contact/) pour nous écrire.
