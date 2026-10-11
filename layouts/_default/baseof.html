@@ -1,79 +1,69 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="msvalidate.01" content="0E54D360A05AC52D09F633684D7AE39A" />
-  
-  <title>
+  <meta name="msvalidate.01" content="0E54D360A05AC52D09F633684D7AE39A" />  <title>
     {{ if .IsHome }}
-      Encyclo Futé — Comprendre le quotidien simplement
+      Les Petits Pourquoi — Comprendre simplement le quotidien
     {{ else }}
-      {{ .Title }} — Encyclo Futé
+      {{ .Title }} — Les Petits Pourquoi
     {{ end }}
-  </title>
+  </title>{{ if .Description }}
+<meta name="description" content="{{ .Description }}">
+{{ else }}
+<meta name="description" content="{{ .Site.Params.description }}">
+{{ end }}
 
-  {{ if .Description }}
-    <meta name="description" content="{{ .Description }}">
-  {{ else }}
-    <meta name="description" content="Encyclo Futé : des explications claires, rapides et fiables pour comprendre le monde, le quotidien et les phénomènes qui nous entourent.">
-  {{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">{{ if .IsHome }}
+<meta property="og:type" content="website">
+{{ else }}
+<meta property="og:type" content="article">
+{{ end }}
 
-  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:site_name" content="Les Petits Pourquoi">
+  <meta property="og:title" content="{{ .Title }} — Les Petits Pourquoi">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">{{ if .IsHome }}
 
-  {{ if .IsHome }}
-    <meta property="og:type" content="website">
-  {{ else }}
-    <meta property="og:type" content="article">
-  {{ end }}
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}Encyclo Futé : des explications simples et fiables pour comprendre le quotidien.{{ end }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-
-  <link rel="stylesheet" href="/css/style.css">
-
-  {{ if .IsHome }}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Encyclo Futé",
-    "url": "https://encyclo-fute.pages.dev/",
+    "name": "Les Petits Pourquoi",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "{{ .Site.Params.description }}",
     "inLanguage": "fr",
     "isAccessibleForFree": true
   }
-  </script>
-  {{ end }}
+  </script>{{ end }}
 
-  {{ if .IsPage }}
+{{ if .IsPage }}
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
     "mainEntityOfPage": "{{ .Permalink }}",
     "headline": "{{ .Title }}",
-    "description": "{{ with .Description }}{{ . }}{{ else }}Explication simple et fiable sur le sujet.{{ end }}",
+    "description": "{{ with .Description }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }}",
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
     "inLanguage": "fr",
     "isAccessibleForFree": true,
     "copyrightYear": "{{ now.Year }}",
     "author": {
-      "@type": "Person",
-      "name": "Encyclo Futé"
+      "@type": "Organization",
+      "name": "Les Petits Pourquoi"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Encyclo Futé"
+      "name": "Les Petits Pourquoi"
     }
     {{ with .Params.image }},
     "image": "{{ . }}"
     {{ end }}
   }
-  </script>
-
-  <!-- BREADCRUMB -->
-  <script type="application/ld+json">
+  </script>  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -82,13 +72,13 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://encyclo-fute.pages.dev/"
+        "item": "{{ $.Site.BaseURL }}"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "{{ .Section | title }}",
-        "item": "{{ .Site.BaseURL }}{{ .Section }}/"
+        "item": "{{ printf "%s%s/" $.Site.BaseURL .Section }}"
       },
       {
         "@type": "ListItem",
@@ -98,16 +88,11 @@
       }
     ]
   }
-  </script>
-  {{ end }}
+  </script>{{ end }}
 
-</head>
-
-<body>
-
-  <header>
+</head><body>  <header>
     <nav>
-      <a href="/">Encyclo Futé</a>
+      <a href="/">Les Petits Pourquoi</a>
       <a href="/encyclopedie/">Encyclopédie</a>
       <a href="/guides/">Guides pratiques</a>
       <a href="/articles/">Articles</a>
@@ -115,13 +100,9 @@
       <a href="/about/">À propos</a>
       <a href="/contact/">Contact</a>
     </nav>
-  </header>
-
-  <main>
+  </header>  <main>
     {{ block "main" . }}{{ end }}
-  </main>
-
-  {{ partial "footer.html" . }}
+  </main>{{ partial "footer.html" . }}
 
 </body>
 </html>
