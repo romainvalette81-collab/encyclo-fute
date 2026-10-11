@@ -2,7 +2,7 @@
 title = "Les Petits Pourquoi"
 description = "Des explications simples et des guides pratiques pour mieux comprendre les choses du quotidien."
 +++
-
+TEST PAGE ACCUEIL LES PETITS POURQUOI
 Bienvenue sur Les Petits Pourquoi
 
 Pourquoi les choses fonctionnent-elles ainsi ? Comment résoudre un problème du quotidien ? Que faut-il comprendre avant de prendre une décision ?
