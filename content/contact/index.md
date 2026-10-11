@@ -3,6 +3,8 @@
 title: "Contact"
 description: "Une question, une suggestion ou une erreur à signaler ? Contactez Les Petits Pourquoi."
 
+---
+
 Contact
 
 Vous avez une question, une suggestion ou vous avez repéré une erreur sur le site ?
