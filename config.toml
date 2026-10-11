@@ -17,8 +17,7 @@ canonifyURLs = true
   category = "categories"
 
 [params]
-description = "Encyclopédie futée du quotidien : maison, auto, tech, administratif, minimalisme, organisation."
-
+  description = "Comprendre simplement les choses du quotidien."
 [menu]
 
   [[menu.main]]
