@@ -1,3 +1,4 @@
+
 /* --------------------------------------------------
    BASE (premium minimaliste)
 -------------------------------------------------- */
@@ -16,6 +17,7 @@ a {
   color: #1a5fad;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -34,14 +36,32 @@ p {
 }
 
 /* --------------------------------------------------
-   HEADER
+   HEADER ET LOGO
 -------------------------------------------------- */
 
 header {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 16px;
 }
 
+/* Logo Les Petits Pourquoi */
+.site-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 18px;
+  text-decoration: none;
+}
+
+.site-logo img {
+  display: block;
+  width: auto;
+  height: 100px;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+/* Navigation */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -52,6 +72,7 @@ nav {
 nav a {
   color: #333;
 }
+
 nav a:hover {
   color: #000;
 }
@@ -87,7 +108,7 @@ footer {
 }
 
 /* --------------------------------------------------
-   ASTUCE FUTÉE (premium minimaliste)
+   ASTUCE FUTÉE
 -------------------------------------------------- */
 
 .astuce-futee {
@@ -111,7 +132,7 @@ footer {
 }
 
 /* --------------------------------------------------
-   LIENS INTERNES (premium minimaliste)
+   LIENS INTERNES
 -------------------------------------------------- */
 
 .liens-internes {
@@ -139,26 +160,32 @@ footer {
 .liens-internes a {
   color: #1a5fad;
 }
+
 .liens-internes a:hover {
   text-decoration: underline;
 }
 
 /* --------------------------------------------------
-   EFFET LOUPE SUR MOBILE (premium)
+   ADAPTATION MOBILE
 -------------------------------------------------- */
 
 @media (max-width: 768px) {
-  body {
-    transform: scale(1.06);
-    transform-origin: top center;
-  }
-
   main {
-    font-size: 1.06em;
+    font-size: 1.02em;
     line-height: 1.55;
   }
 
   nav {
     gap: 10px 14px;
   }
-   }
+}
+
+@media (max-width: 600px) {
+  .site-logo img {
+    height: 76px;
+  }
+
+  header {
+    padding: 16px 10px;
+  }
+}
