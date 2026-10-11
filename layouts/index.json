@@ -1,0 +1,17 @@
+{{- $pages := slice -}}
+{{- range site.RegularPages -}}
+  {{- if in (slice "articles" "guides" "encyclopedie") .Section -}}
+    {{- $pages = $pages | append . -}}
+  {{- end -}}
+{{- end -}}
+[
+{{- range $index, $page := $pages -}}
+  {{- if $index -}},{{- end }}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "url": {{ $page.RelPermalink | jsonify }},
+    "section": {{ $page.Section | jsonify }},
+    "summary": {{ ($page.Description | default ($page.Summary | plainify | htmlUnescape)) | jsonify }}
+  }
+{{- end -}}
+]
