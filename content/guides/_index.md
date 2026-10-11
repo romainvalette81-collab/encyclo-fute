@@ -1,23 +1,32 @@
 ---
+
 title: "Guides pratiques"
-description: "Des guides concrets pour simplifier le quotidien : maison, organisation, tech, auto, minimalisme."
----
+description: "Des guides pratiques et des conseils étape par étape pour simplifier le quotidien : maison, organisation, technologie et automobile."
 
-## Guides pratiques
+Des guides pratiques pour le quotidien
 
-Ici tu trouveras des guides concrets et actionnables pour améliorer ton quotidien.
+Comment résoudre un problème courant, mieux s’organiser ou comprendre comment effectuer une tâche ?
 
-Chaque guide est pensé pour être :
-- **simple** à suivre
-- **utile** immédiatement
-- **sans jargon**
+Les guides pratiques de Les Petits Pourquoi proposent des solutions concrètes et des explications étape par étape pour vous aider à passer à l’action, simplement.
 
-### Thèmes abordés
+Des solutions concrètes, étape par étape
 
-- Organisation du quotidien  
-- Maison et entretien  
-- Minimalisme  
-- Tech et outils numériques  
-- Auto et gestes de base  
+Chaque guide est conçu pour être :
 
-Choisis un guide et applique-le pas à pas.
+- Simple à suivre : des explications claires et accessibles.
+- Utile au quotidien : des conseils applicables à des situations concrètes.
+- Facile à comprendre : un langage direct, sans jargon inutile.
+
+Les thèmes abordés
+
+- Organisation : mieux gérer son temps et simplifier les tâches quotidiennes.
+- Maison et entretien : comprendre les équipements et les gestes courants.
+- Minimalisme : alléger son quotidien et se concentrer sur l’essentiel.
+- Technologie : mieux utiliser les outils et services numériques.
+- Automobile : comprendre les équipements et les vérifications de base.
+
+Trouver le bon guide
+
+Parcourez les guides disponibles et choisissez celui qui correspond à votre besoin. Suivez les étapes à votre rythme et retrouvez des explications conçues pour vous aider concrètement.
+
+Bonne lecture sur Les Petits Pourquoi !
