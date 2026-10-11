@@ -1,44 +1,22 @@
 ---
 
 title: "À propos"
-description: "Les Petits Pourquoi : des explications claires, des guides pratiques et des informations accessibles pour mieux comprendre le quotidien."
+description: "Découvrez Les Petits Pourquoi, un site consacré aux explications simples et pratiques du quotidien."
 
 À propos de Les Petits Pourquoi
 
-Les Petits Pourquoi est un site consacré à la compréhension des choses du quotidien.
+Les Petits Pourquoi est un site indépendant qui aide à mieux comprendre les choses du quotidien.
 
-Son objectif est simple : expliquer clairement ce qui nous entoure — la maison, l’automobile, la technologie, l’organisation et les démarches administratives — sans jargon inutile ni perte de temps.
+Son objectif est simple : apporter des réponses claires aux questions que l’on peut se poser sur la maison, l’automobile, la technologie, les démarches administratives et bien d’autres sujets.
 
-Pourquoi ce site ?
+Une information accessible
 
-Les informations utiles sont parfois difficiles à trouver. Elles peuvent être trop longues, trop techniques ou manquer de réponses concrètes.
+Les contenus sont rédigés dans un esprit pédagogique, avec des explications structurées et un vocabulaire accessible. L’objectif est de comprendre l’essentiel sans avoir à parcourir des explications inutilement compliquées.
 
-Les Petits Pourquoi privilégie une approche différente :
+Certains contenus peuvent être élaborés avec l’aide d’outils d’intelligence artificielle. Ils doivent être lus avec discernement et les informations importantes, notamment techniques ou administratives, méritent d’être vérifiées auprès de sources fiables.
 
-- Des explications claires pour comprendre l’essentiel.
-- Des guides pratiques pour avancer étape par étape.
-- Des articles accessibles pour approfondir les sujets du quotidien.
-- Une navigation simple pour trouver rapidement l’information recherchée.
+Un site qui évolue
 
-Que vous souhaitiez comprendre un voyant sur un tableau de bord, mieux utiliser un équipement ou simplifier votre organisation, l’objectif est de vous apporter une réponse utile et compréhensible.
+Les Petits Pourquoi a vocation à s’enrichir progressivement de nouvelles explications et de nouveaux guides pratiques, au fil des questions et des besoins du quotidien.
 
-Ce que vous trouverez sur le site
-
-- Encyclopédie : des explications sur les objets, les notions et les équipements du quotidien.
-- Guides pratiques : des méthodes concrètes à appliquer étape par étape.
-- Articles : des sujets développés pour mieux comprendre certaines questions.
-- Catégories : des contenus regroupés par thème pour faciliter la navigation.
-
-Un site volontairement minimaliste
-
-Les Petits Pourquoi privilégie la simplicité : une présentation épurée, des contenus structurés et une lecture sans distraction inutile.
-
-Le site évolue progressivement pour proposer des informations toujours plus utiles et accessibles.
-
-Si une page vous permet de gagner du temps, d’éviter une erreur ou de mieux comprendre quelque chose, elle a rempli son objectif.
-
-Une question ou une suggestion ?
-
-Vous souhaitez proposer un sujet, signaler une erreur ou poser une question ?
-
-Vous pouvez utiliser la "page Contact" (/contact/) pour nous écrire.
+Bonne lecture !
