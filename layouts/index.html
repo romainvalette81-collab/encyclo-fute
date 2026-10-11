@@ -1,3 +1,4 @@
+
 {{ define "main" }}
 
 <section class="home-hero">
@@ -8,74 +9,6 @@
     Retrouvez des réponses claires, sans jargon inutile.
   </p>
 </section>
-
-<section class="home-assistant">
-  <h2>Une question ?</h2>
-  <p>Pose ta question : l’assistant t’aidera à comprendre et te proposera des articles utiles.</p>
-
-  <form id="assistant-form">
-    <label for="assistant-question">Ta question</label>
-    <div class="assistant-controls">
-      <input
-        id="assistant-question"
-        name="question"
-        type="text"
-        maxlength="500"
-        placeholder="Pourquoi le ciel est-il bleu ?"
-        required
-      >
-      <button type="submit" id="assistant-submit">Poser ma question</button>
-    </div>
-  </form>
-
-  <p id="assistant-status" role="status" aria-live="polite"></p>
-  <div id="assistant-answer" hidden>
-    <h3>La réponse</h3>
-    <p id="assistant-text"></p>
-    <ul id="assistant-links"></ul>
-  </div>
-</section>
-
-<script>
-(() => {
-  const form = document.getElementById("assistant-form");
-  if (!form) return;
-
-  const input = document.getElementById("assistant-question");
-  const button = document.getElementById("assistant-submit");
-  const status = document.getElementById("assistant-status");
-  const answerBox = document.getElementById("assistant-answer");
-  const answerText = document.getElementById("assistant-text");
-  const linksList = document.getElementById("assistant-links");
-
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    const question = input.value.trim();
-    if (!question) return;
-
-    button.disabled = true;
-    status.textContent = "Je cherche une réponse…";
-    answerBox.hidden = true;
-    answerText.textContent = "";
-    linksList.replaceChildren();
-
-    try {
-      const response = await fetch("/api/ask", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question })
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Impossible d’obtenir une réponse.");
-      }
-
-      answerText.textContent = data.answer || "Je n’ai pas de réponse pour le moment.";
-
-      if (Array.isArray(data.links)) {
 
 <section class="home-assistant">
   <h2>Rechercher sur le site</h2>
@@ -97,6 +30,7 @@
   </form>
 
   <p id="site-search-status" role="status" aria-live="polite"></p>
+
   <div id="site-search-results" hidden>
     <ul id="site-search-list"></ul>
   </div>
@@ -180,6 +114,7 @@
 
         link.href = item.page.url;
         link.textContent = item.page.title;
+
         description.textContent =
           item.page.summary || "Consulter ce contenu.";
 
@@ -189,6 +124,7 @@
       }
 
       resultsBox.hidden = false;
+
       status.textContent =
         matches.length + (matches.length === 10
           ? " résultats affichés au maximum."
@@ -205,6 +141,7 @@
 })();
 </script>
 
+<section class="home-latest">
   <h2>Derniers articles</h2>
   <ul>
     {{ range first 8 (where .Site.RegularPages "Section" "articles").ByDate.Reverse }}
@@ -247,3 +184,4 @@
 </section>
 
 {{ end }}
+  
