@@ -3,6 +3,8 @@
 title: "Catégories"
 description: "Parcourez les articles et les guides par thème : automobile, maison, technologie, administratif et organisation du quotidien."
 
+---
+
 Explorer les catégories
 
 Vous cherchez une information sur un sujet précis ?
