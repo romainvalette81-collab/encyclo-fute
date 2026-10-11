@@ -76,30 +76,128 @@
       answerText.textContent = data.answer || "Je n’ai pas de réponse pour le moment.";
 
       if (Array.isArray(data.links)) {
-        data.links.forEach((item) => {
-          if (
-            !item ||
-            typeof item.title !== "string" ||
-            typeof item.url !== "string"
-          ) return;
 
-          const url = new URL(item.url, window.location.origin);
-          if (url.origin !== window.location.origin) return;
+<section class="home-assistant">
+  <h2>Rechercher sur le site</h2>
+  <p>Retrouve rapidement un article, un guide ou une fiche de l’encyclopédie.</p>
 
-          const li = document.createElement("li");
-          const link = document.createElement("a");
-          link.href = url.pathname + url.search + url.hash;
-          link.textContent = item.title;
-          li.appendChild(link);
-          linksList.appendChild(li);
-        });
+  <form id="site-search-form">
+    <label for="site-search-query">Que veux-tu comprendre ?</label>
+    <div class="assistant-controls">
+      <input
+        id="site-search-query"
+        name="q"
+        type="search"
+        maxlength="200"
+        placeholder="Ex. : Pourquoi le ciel est-il bleu ?"
+        required
+      >
+      <button type="submit" id="site-search-submit">Rechercher</button>
+    </div>
+  </form>
+
+  <p id="site-search-status" role="status" aria-live="polite"></p>
+  <div id="site-search-results" hidden>
+    <ul id="site-search-list"></ul>
+  </div>
+</section>
+
+<script>
+(() => {
+  const form = document.getElementById("site-search-form");
+  if (!form) return;
+
+  const input = document.getElementById("site-search-query");
+  const button = document.getElementById("site-search-submit");
+  const status = document.getElementById("site-search-status");
+  const resultsBox = document.getElementById("site-search-results");
+  const resultsList = document.getElementById("site-search-list");
+
+  let indexPromise;
+
+  function normalize(value) {
+    return value
+      .toLocaleLowerCase("fr")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const query = normalize(input.value);
+    if (!query) return;
+
+    const terms = query.split(/\s+/).filter(term => term.length > 1);
+
+    button.disabled = true;
+    status.textContent = "Recherche en cours…";
+    resultsBox.hidden = true;
+    resultsList.replaceChildren();
+
+    try {
+      if (!indexPromise) {
+        indexPromise = fetch("/index.json")
+          .then(response => {
+            if (!response.ok) {
+              throw new Error("Impossible de charger l’index de recherche.");
+            }
+            return response.json();
+          });
       }
 
-      answerBox.hidden = false;
-      status.textContent = "";
-    } catch (error) {
+      const pages = await indexPromise;
+
+      const matches = pages.map(page => {
+        const title = normalize(page.title || "");
+        const summary = normalize(page.summary || "");
+        const url = normalize(page.url || "");
+        let score = 0;
+
+        for (const term of terms) {
+          if (title.includes(term)) score += 5;
+          if (summary.includes(term)) score += 2;
+          if (url.includes(term)) score += 1;
+        }
+
+        return { page, score };
+      })
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 10);
+
+      if (matches.length === 0) {
+        status.textContent = "Aucun résultat. Essaie avec d’autres mots.";
+        return;
+      }
+
+      for (const item of matches) {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        const description = document.createElement("p");
+
+        link.href = item.page.url;
+        link.textContent = item.page.title;
+        description.textContent =
+          item.page.summary || "Consulter ce contenu.";
+
+        li.appendChild(link);
+        li.appendChild(description);
+        resultsList.appendChild(li);
+      }
+
+      resultsBox.hidden = false;
       status.textContent =
-        error.message || "Un problème est survenu. Réessaie dans un instant.";
+        matches.length + (matches.length === 10
+          ? " résultats affichés au maximum."
+          : " résultat(s) trouvé(s).");
+
+    } catch (error) {
+      indexPromise = null;
+      status.textContent =
+        "La recherche rencontre un problème. Réessaie dans un instant.";
     } finally {
       button.disabled = false;
     }
@@ -107,7 +205,6 @@
 })();
 </script>
 
-<section class="home-latest">
   <h2>Derniers articles</h2>
   <ul>
     {{ range first 8 (where .Site.RegularPages "Section" "articles").ByDate.Reverse }}
