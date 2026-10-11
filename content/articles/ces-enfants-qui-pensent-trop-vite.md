@@ -6,6 +6,8 @@ slug: "ces-enfants-qui-pensent-trop-vite"
 date: 2026-10-11
 categories: ["Enfance", "Comprendre les différences", "Éducation"]
 
+---
+
 Ces enfants qui pensent trop vite pour le monde qui les entoure
 
 Ils posent mille questions, veulent tout comprendre, contestent parfois l'évidence et semblent ne jamais s'arrêter. Derrière ces enfants que l'on trouve parfois difficiles se cache peut-être une réalité que nous ne prenons pas assez le temps de regarder.
