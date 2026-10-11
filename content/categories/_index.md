@@ -1,9 +1,16 @@
 ---
+
 title: "Catégories"
-description: "Navigue par thème : automobile, maison, tech, administratif, organisation, minimalisme."
----
+description: "Parcourez les articles et les guides par thème : automobile, maison, technologie, administratif et organisation du quotidien."
 
-## Explorer les catégories
+Explorer les catégories
 
-Les catégories te permettent de naviguer facilement dans les différents thèmes du site.
-Chaque catégorie regroupe des articles et des guides liés à un même sujet.
+Vous cherchez une information sur un sujet précis ?
+
+Les catégories de Les Petits Pourquoi regroupent les articles et les guides par thème pour vous aider à trouver plus facilement les informations qui vous intéressent.
+
+Parcourir les thèmes
+
+Que vous souhaitiez comprendre un équipement automobile, effectuer une démarche administrative ou simplifier votre organisation, les catégories vous permettent d'explorer les contenus selon vos besoins.
+
+Choisissez un thème pour découvrir les articles et les guides associés.
