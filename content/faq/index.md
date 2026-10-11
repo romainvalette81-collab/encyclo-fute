@@ -1,27 +1,34 @@
 ---
+
 title: "FAQ — Questions fréquentes"
-description: "Toutes les réponses simples aux questions courantes sur Encyclo Futé."
----
+description: "Retrouvez les réponses aux questions fréquentes sur Les Petits Pourquoi, ses contenus et son fonctionnement."
 
-# FAQ — Questions fréquentes
+FAQ — Questions fréquentes
 
-## Encyclo Futé, c’est quoi ?
-Encyclo Futé est un site qui explique simplement les choses du quotidien : cuisine, auto, tech, organisation, culture, bien‑être, minimalisme.
+Les Petits Pourquoi, qu’est-ce que c’est ?
 
-## Qui écrit les articles ?
-Les contenus sont rédigés et structurés pour être clairs, courts, utiles et faciles à comprendre.
+Les Petits Pourquoi est un site consacré à la compréhension des choses du quotidien. Il propose des explications accessibles, des articles et des guides pratiques sur des thèmes comme la maison, l’automobile, la technologie, l’organisation et le minimalisme.
 
-## Comment sont choisis les sujets ?
-Les sujets viennent des questions du quotidien, des recherches fréquentes, et des besoins pratiques.
+Qui rédige les articles ?
 
-## Est‑ce que les articles sont mis à jour ?
-Oui. Les contenus sont régulièrement relus et ajustés pour rester fiables et utiles.
+Les contenus sont préparés et structurés pour être clairs, utiles et faciles à comprendre. Ils ont pour objectif de rendre les informations accessibles, sans jargon inutile.
 
-## Est‑ce que le site utilise des cookies ?
-Non. Encyclo Futé n’utilise pas de cookies de suivi, pas de publicité, pas d’analyse intrusive.
+Comment les sujets sont-ils choisis ?
 
-## Est‑ce que mes données sont collectées ?
-Non. Aucune donnée personnelle n’est collectée, stockée ou revendue.
+Les sujets sont inspirés des questions du quotidien, des problèmes pratiques et des notions que les lecteurs souhaitent mieux comprendre.
 
-## Comment contacter le site ?
-Une page “Contact” est disponible pour toute question ou suggestion.
+Les articles sont-ils mis à jour ?
+
+Les contenus peuvent être relus, corrigés et complétés afin d’améliorer leur clarté et leur utilité. Pour un sujet technique ou susceptible d’évoluer, il est conseillé de vérifier les informations auprès de sources adaptées.
+
+Le site utilise-t-il des cookies ?
+
+Le fonctionnement de cette page ne nécessite pas, à lui seul, de cookies publicitaires. L’utilisation éventuelle de cookies ou de traceurs dépend toutefois des services techniques intégrés au site. Consultez les informations légales pour connaître les pratiques effectivement applicables.
+
+Mes données personnelles sont-elles collectées ?
+
+Les données éventuellement traitées dépendent des fonctionnalités utilisées et des services tiers intégrés. Si vous contactez le site ou utilisez un service externe, des données peuvent être traitées dans ce cadre. Consultez les mentions légales et les informations relatives à la confidentialité pour en savoir plus.
+
+Comment contacter Les Petits Pourquoi ?
+
+Vous pouvez consulter la "page Contact" (/contact/) pour poser une question, suggérer un sujet ou signaler une erreur.
