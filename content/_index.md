@@ -1,39 +1,40 @@
 +++
-title = "Encyclo Futé"
-description = "Comprendre simplement les choses du quotidien."
+title = "Les Petits Pourquoi"
+description = "Des explications simples et des guides pratiques pour mieux comprendre les choses du quotidien."
 +++
 
-# Bienvenue sur Encyclo Futé
+Bienvenue sur Les Petits Pourquoi
 
-Votre encyclopédie moderne, claire et pratique.  
-Des explications simples, des guides utiles, et des catégories organisées pour aller droit au but.
+Pourquoi les choses fonctionnent-elles ainsi ? Comment résoudre un problème du quotidien ? Que faut-il comprendre avant de prendre une décision ?
 
-## Explorer l’Encyclopédie
+Les Petits Pourquoi vous propose des explications claires, des réponses concrètes et des guides pratiques pour comprendre l’essentiel, sans jargon inutile.
 
-Des articles courts et précis pour comprendre rapidement un sujet du quotidien.
+L’Encyclopédie
 
-→ [Accéder à l’Encyclopédie](encyclopedie/)
+Des explications accessibles pour comprendre les phénomènes, les objets et les situations qui nous entourent.
 
-## Guides pratiques
+→ "Explorer l’Encyclopédie" (encyclopedie/)
 
-Des tutoriels simples, des étapes claires, des solutions concrètes.
+Les guides pratiques
 
-→ [Voir les guides pratiques](guides/)
+Des conseils étape par étape pour résoudre un problème, effectuer une démarche ou trouver une solution concrète.
 
-## Catégories
+→ "Découvrir les guides pratiques" (guides/)
 
-Une navigation organisée pour trouver facilement ce que vous cherchez.
+Les catégories
 
-→ [Parcourir les catégories](categories/)
+Retrouvez les contenus classés par thème pour accéder plus facilement aux sujets qui vous intéressent.
 
-## À propos
+→ "Parcourir les catégories" (categories/)
 
-La mission d’Encyclo Futé et la philosophie du projet.
+À propos
 
-→ [En savoir plus](about/)
+Découvrez la démarche et les objectifs de Les Petits Pourquoi.
 
-## Contact
+→ "Découvrir le projet" (about/)
 
-Une question, une suggestion, une idée d’article ?
+Une question ou une suggestion ?
 
-→ [Nous contacter](contact/)
+Une interrogation du quotidien, une idée de sujet ou une remarque à partager ?
+
+→ "Nous contacter" (contact/)
