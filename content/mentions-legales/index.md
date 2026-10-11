@@ -3,6 +3,8 @@
 title: "Mentions légales"
 description: "Mentions légales du blog Les Petits Pourquoi."
 
+---
+
 Mentions légales
 
 Éditeur du site
