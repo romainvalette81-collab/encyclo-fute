@@ -1,57 +1,55 @@
-baseURL = "https://lespetitspourquoi.fr/"
+baseURL = "https://www.lespetitspourquoi.fr/"
 title = "Les Petits Pourquoi"
 
 languageCode = "fr"
-title = "Les Petits Pourquoi"
+
 [pagination]
 pagerSize = 10
 
-
 buildFuture = false
 
-# Important pour GitHub Pages en sous-dossier
 relativeURLs = false
-canonifyURLs = false 
+canonifyURLs = false
 
 [taxonomies]
-  category = "categories"
+category = "categories"
 
 [params]
-  description = "Comprendre simplement les choses du quotidien."
+description = "Comprendre simplement les choses du quotidien."
+
 [menu]
 
-  [[menu.main]]
-    name = "Accueil"
-    url = "/"
-    weight = 1
+[[menu.main]]
+name = "Accueil"
+url = "/"
+weight = 1
 
-  [[menu.main]]
-    name = "Encyclopédie"
-    url = "/encyclopedie/"
-    weight = 2
+[[menu.main]]
+name = "Encyclopédie"
+url = "/encyclopedie/"
+weight = 2
 
-  [[menu.main]]
-    name = "Guides pratiques"
-    url = "/guides/"
-    weight = 3
+[[menu.main]]
+name = "Guides pratiques"
+url = "/guides/"
+weight = 3
 
-  [[menu.main]]
-    name = "Articles"
-    url = "/articles/"
-    weight = 4
+[[menu.main]]
+name = "Articles"
+url = "/articles/"
+weight = 4
 
-  [[menu.main]]
-    name = "Catégories"
-    url = "/categories/"
-    weight = 5
+[[menu.main]]
+name = "Catégories"
+url = "/categories/"
+weight = 5
 
-  [[menu.main]]
-    name = "À propos"
-    url = "/about/"
-    weight = 6
+[[menu.main]]
+name = "À propos"
+url = "/about/"
+weight = 6
 
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 7
-
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 7
