@@ -3,6 +3,8 @@
 title: "FAQ — Questions fréquentes"
 description: "Retrouvez les réponses aux questions fréquentes sur Les Petits Pourquoi, ses contenus et son fonctionnement."
 
+---
+
 FAQ — Questions fréquentes
 
 Les Petits Pourquoi, qu’est-ce que c’est ?
