@@ -3,6 +3,8 @@
 title: "Encyclopédie"
 description: "Des explications simples et pratiques pour comprendre les objets, les documents et les notions du quotidien."
 
+---
+
 L’Encyclopédie des Petits Pourquoi
 
 Pourquoi certains objets fonctionnent-ils ainsi ? À quoi sert un document administratif ? Comment comprendre un équipement de la maison ou un élément technique ?
