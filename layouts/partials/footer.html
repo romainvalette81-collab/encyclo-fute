@@ -1,12 +1,12 @@
 <footer class="site-footer">
 
-  <nav class="footer-links">
-    <a href="/faq/">FAQ</a>
-    <a href="/conditions-utilisation/">Conditions générales</a>
-    <a href="/mentions-legales/">Mentions légales</a>
-    <a href="/contact/">Contact</a>
+  <nav class="footer-links" aria-label="Navigation de pied de page">
+    <a href="{{ "faq/" | relURL }}">FAQ</a>
+    <a href="{{ "conditions-utilisation/" | relURL }}">Conditions générales</a>
+    <a href="{{ "mentions-legales/" | relURL }}">Mentions légales</a>
+    <a href="{{ "contact/" | relURL }}">Contact</a>
   </nav>
 
-  <p>© Encyclo Futé — {{ now.Year }}</p>
+  <p>© Les Petits Pourquoi — {{ now.Year }}</p>
 
 </footer>
