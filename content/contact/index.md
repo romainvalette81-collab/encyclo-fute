@@ -1,33 +1,33 @@
 ---
+
 title: "Contact"
-description: "Une question, une suggestion, une erreur à signaler ? Contacte Encyclo Futé."
----
+description: "Une question, une suggestion ou une erreur à signaler ? Contactez Les Petits Pourquoi."
 
-## Contact
+Contact
 
-Tu as une question, une suggestion, ou tu as repéré une erreur ?  
-N’hésite pas à écrire.
+Vous avez une question, une suggestion ou vous avez repéré une erreur sur le site ?
 
-### Comment me contacter
+Vos retours sont les bienvenus. Ils permettent d'améliorer les contenus et de rendre les informations toujours plus claires et utiles.
 
-Le moyen le plus simple est via **GitHub** :  
-[github.com/romainvalette81-collab](https://github.com/romainvalette81-collab)
+Comment nous contacter ?
 
-Tu peux aussi ouvrir une *issue* sur le dépôt du site pour signaler un bug, proposer un sujet, ou demander une clarification.
+Vous pouvez retrouver le projet sur GitHub :
 
-### Quels retours sont utiles ?
+"Accéder au profil GitHub" (https://github.com/romainvalette81-collab)
 
-- Une info incorrecte ou incomplète  
-- Un sujet que tu aimerais voir traité  
-- Une idée d’amélioration (structure, clarté, navigation)  
-- Une question sur un article ou un guide  
+Vous pouvez également ouvrir une issue sur le dépôt du site pour signaler un problème technique, proposer un sujet ou demander une clarification sur un contenu.
 
-Tous les retours constructifs sont les bienvenus.  
-Encyclo Futé est un projet vivant : il s’améliore grâce aux lecteurs.
+Quels retours sont utiles ?
 
-### Délai de réponse
+- Une information incorrecte ou incomplète.
+- Un sujet que vous aimeriez voir traité.
+- Une suggestion pour améliorer la structure, la clarté ou la navigation.
+- Une question concernant un article ou un guide pratique.
 
-Les messages sont lus régulièrement.  
-Une réponse est en général envoyée sous quelques jours.
+Tous les retours constructifs sont les bienvenus.
 
-Merci de faire partie de l’aventure Encyclo Futé.
+Délai de réponse
+
+Les messages et les demandes sont consultés régulièrement. Un délai de quelques jours peut être nécessaire avant d'obtenir une réponse.
+
+Merci de contribuer à l'amélioration de Les Petits Pourquoi.
