@@ -3,6 +3,8 @@
 title: "Guides pratiques"
 description: "Des guides pratiques et des conseils étape par étape pour simplifier le quotidien : maison, organisation, technologie et automobile."
 
+---
+
 Des guides pratiques pour le quotidien
 
 Comment résoudre un problème courant, mieux s’organiser ou comprendre comment effectuer une tâche ?
