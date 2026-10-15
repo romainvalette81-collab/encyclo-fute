@@ -2,7 +2,7 @@
 title: "Pourquoi on entend mieux la nuit (ou pourquoi les bruits semblent plus forts) ?"
 description: "Un frigo, une voiture au loin, un plancher qui craque… La nuit, tout semble plus bruyant. Voici pourquoi notre oreille et notre environnement changent la perception du son."
 slug: "pourquoi-on-entend-mieux-la-nuit"
-date: 2026-10-15T06:00:00+02:00
+date: 2026-10-15
 categories: ["Encyclopédie", "Quotidien", "Bien-Être"]
 ---
 
