@@ -54,6 +54,10 @@ name = "Contact"
 url = "/contact/"
 weight = 7
 
-
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-8MFE6E69R7"
+    
