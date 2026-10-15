@@ -2,7 +2,7 @@
 title: "Comment faire durer plus longtemps un bouquet de fleurs coupées"
 description: "Un bouquet qui fane en deux jours, ce n’est pas une fatalité. Voici les gestes simples pour prolonger nettement la vie de vos fleurs coupées."
 slug: "comment-faire-durer-bouquet-fleurs-coupees"
-date: 2026-10-15T06:00:00+02:00
+date: 2026-10-15
 categories: ["Guides", "Maison", "Quotidien"]
 ---
 
