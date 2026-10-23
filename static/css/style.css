@@ -1,15 +1,23 @@
-
 /* --------------------------------------------------
    BASE (premium minimaliste)
 -------------------------------------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #222;
   background: #fff;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Liens */
@@ -26,51 +34,65 @@ a:hover {
 h1, h2, h3 {
   font-weight: 600;
   line-height: 1.3;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 2rem;
+  margin-bottom: 0.9rem;
+  color: #111;
 }
 
-/* Paragraphes */
+h1 {
+  font-size: 1.85rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
 p {
-  margin-bottom: 15px;
+  margin-bottom: 1.1rem;
 }
 
 /* --------------------------------------------------
-   HEADER ET LOGO
+   HEADER + LOGO + NAV
 -------------------------------------------------- */
 
 header {
   text-align: center;
-  padding: 20px 16px;
+  padding: 20px 16px 16px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-/* Logo Les Petits Pourquoi */
 .site-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 18px;
+  margin: 0 auto 16px;
   text-decoration: none;
 }
 
 .site-logo img {
   display: block;
+  height: 90px;
   width: auto;
-  height: 100px;
   max-width: 90%;
   object-fit: contain;
 }
 
-/* Navigation */
 nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px 18px;
+  gap: 10px 18px;
 }
 
 nav a {
   color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 nav a:hover {
@@ -82,9 +104,17 @@ nav a:hover {
 -------------------------------------------------- */
 
 main {
-  max-width: 680px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 24px 20px 40px;
+}
+
+/* --------------------------------------------------
+   CORRECTION DOUBLE TITRE (Encyclopédie)
+-------------------------------------------------- */
+
+.encyclo-content > h1:first-child {
+  display: none;
 }
 
 /* --------------------------------------------------
@@ -92,15 +122,15 @@ main {
 -------------------------------------------------- */
 
 footer {
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center;
   font-size: 0.9rem;
   color: #666;
-  padding-bottom: 40px;
+  padding: 0 16px 40px;
 }
 
 .footer-links {
-  margin-top: 10px;
+  margin-top: 12px;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -113,16 +143,16 @@ footer {
 
 .astuce-futee {
   margin-top: 40px;
-  padding: 20px;
+  padding: 20px 22px;
   border-left: 4px solid #1a5fad;
   background: #f7f9fc;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .astuce-futee h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: #1a5fad;
 }
 
@@ -137,14 +167,13 @@ footer {
 
 .liens-internes {
   margin-top: 50px;
-  padding-top: 20px;
-  border-top: 1px solid #e0e0e0;
+  padding-top: 24px;
+  border-top: 1px solid #eaeaea;
 }
 
 .liens-internes h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #222;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
 }
 
 .liens-internes ul {
@@ -154,31 +183,12 @@ footer {
 }
 
 .liens-internes li {
-  margin: 6px 0;
-}
-
-.liens-internes a {
-  color: #1a5fad;
-}
-
-.liens-internes a:hover {
-  text-decoration: underline;
+  margin: 8px 0;
 }
 
 /* --------------------------------------------------
-   ADAPTATION MOBILE
+   MOBILE
 -------------------------------------------------- */
-
-@media (max-width: 768px) {
-  main {
-    font-size: 1.02em;
-    line-height: 1.55;
-  }
-
-  nav {
-    gap: 10px 14px;
-  }
-}
 
 @media (max-width: 600px) {
   .site-logo img {
@@ -186,77 +196,18 @@ footer {
   }
 
   header {
-    padding: 16px 10px;
-  }
-}
-
-
-/* --------------------------------------------------
-   CORRECTIONS AFFICHAGE MOBILE
--------------------------------------------------- */
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-}
-
-body {
-  transform: none;
-}
-
-header {
-  width: 100%;
-  padding: 16px 12px;
-}
-
-.site-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 16px;
-}
-
-.site-logo img {
-  display: block;
-  width: auto;
-  height: 110px;
-  max-width: 90%;
-  object-fit: contain;
-}
-
-nav {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 16px;
-}
-
-main {
-  display: block;
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 18px;
-}
-
-@media (max-width: 600px) {
-  .site-logo img {
-    height: 90px;
+    padding: 16px 12px 12px;
   }
 
   main {
-    padding: 0 16px;
-    font-size: 1rem;
+    padding: 20px 16px 36px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
   }
 
   nav {
-    gap: 10px 14px;
+    gap: 8px 14px;
   }
-}
+   }
