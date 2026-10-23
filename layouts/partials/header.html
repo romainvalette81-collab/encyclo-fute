@@ -1,18 +1,15 @@
-<header>
-  <nav aria-label="Navigation principale" style="display:flex; gap:20px; align-items:center; padding:10px 0; flex-wrap:wrap;">
-
-    <!-- LOGO -->
-    <a href="{{ "/" | relURL }}" aria-label="Accueil Les Petits Pourquoi">
-      <img src="{{ "logo.png" | relURL }}" alt="Les Petits Pourquoi" style="height:40px; display:block;">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="{{ "/" | relURL }}" aria-label="Accueil — Les Petits Pourquoi">
+      <img src="{{ "logo-lpp.png" | relURL }}" alt="Les Petits Pourquoi" width="160" height="40">
     </a>
 
-    <!-- MENU -->
-    <a href="{{ "encyclopedie/" | relURL }}">Encyclopédie</a>
-    <a href="{{ "guides/" | relURL }}">Guides pratiques</a>
-    <a href="{{ "articles/" | relURL }}">Articles</a>
-    <a href="{{ "categories/" | relURL }}">Catégories</a>
-    <a href="{{ "about/" | relURL }}">À propos</a>
-    <a href="{{ "contact/" | relURL }}">Contact</a>
-
-  </nav>
+    <nav class="main-nav" aria-label="Navigation principale">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}" {{ if $.IsMenuCurrent "main" . }}aria-current="page"{{ end }}>
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </nav>
+  </div>
 </header>
