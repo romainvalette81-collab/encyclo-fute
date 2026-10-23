@@ -110,6 +110,23 @@ main {
 }
 
 /* --------------------------------------------------
+   META DATE + TEMPS DE LECTURE
+-------------------------------------------------- */
+
+.article-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.article-meta .separator {
+  color: #ccc;
+}
+
+/* --------------------------------------------------
    CORRECTION DOUBLE TITRE (Encyclopédie)
 -------------------------------------------------- */
 
