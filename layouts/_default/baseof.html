@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,18 +20,27 @@
 
   <link rel="canonical" href="{{ .Permalink }}">
 
+  <!-- Open Graph -->
   <meta property="og:site_name" content="Les Petits Pourquoi">
-  <meta property="og:title" content="{{ .Title }} — Les Petits Pourquoi">
+  <meta property="og:title" content="{{ if .IsHome }}Les Petits Pourquoi — Comprendre simplement le quotidien{{ else }}{{ .Title }} — Les Petits Pourquoi{{ end }}">
   <meta property="og:description" content="{{ $description }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 
+  <!-- Image Open Graph dynamique (sans limite de volume) -->
+  <meta property="og:image" content="https://imgen.jitbit.com?txt={{ if .IsHome }}Les Petits Pourquoi{{ else }}{{ .Title | urlquery }}{{ end }}&bg=https://www.lespetitspourquoi.fr/logo-lpp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}Les Petits Pourquoi — Comprendre simplement le quotidien{{ else }}{{ .Title }} — Les Petits Pourquoi{{ end }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  <meta name="twitter:image" content="https://imgen.jitbit.com?txt={{ if .IsHome }}Les Petits Pourquoi{{ else }}{{ .Title | urlquery }}{{ end }}&bg=https://www.lespetitspourquoi.fr/logo-lpp.png">
+
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
 
-
-<link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
-  
-  
   {{ if .IsHome }}
   <script type="application/ld+json">
   {
@@ -74,20 +82,15 @@
   </script>
   {{ end }}
 
-
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MFE6E69R7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-8MFE6E69R7');
   </script>
 
-</head>
-  
-  
 </head>
 
 <body>
