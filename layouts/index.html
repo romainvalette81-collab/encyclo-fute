@@ -7,7 +7,9 @@
     Pourquoi les choses fonctionnent-elles ainsi ? Comment résoudre un problème du quotidien ?
     Retrouvez des réponses claires, sans jargon inutile.
   </p>
-</section><section class="home-featured-article">
+</section>
+
+<section class="home-featured-article">
   <p><strong>Une pensée particulière</strong></p>
   <h2>Ces enfants qui pensent trop vite pour le monde qui les entoure</h2>
   <p>
@@ -21,9 +23,13 @@
       Lire cet article → 
     </a>
   </p>
-</section><section class="home-assistant">
+</section>
+
+<section class="home-assistant">
   <h2>Rechercher sur le site</h2>
-  <p>Retrouve rapidement un article, un guide ou une fiche de l’encyclopédie.</p>  <form id="site-search-form">
+  <p>Retrouve rapidement un article, un guide ou une fiche de l’encyclopédie.</p>
+
+  <form id="site-search-form">
     <label for="site-search-query">Que veux-tu comprendre ?</label>
     <div class="assistant-controls">
       <input
@@ -36,10 +42,16 @@
       >
       <button type="submit" id="site-search-submit">Rechercher</button>
     </div>
-  </form>  <p id="site-search-status" role="status" aria-live="polite"></p>  <div id="site-search-results" hidden>
+  </form>
+
+  <p id="site-search-status" role="status" aria-live="polite"></p>
+
+  <div id="site-search-results" hidden>
     <ul id="site-search-list"></ul>
   </div>
-</section><script>
+</section>
+
+<script>
 (() => {
   const form = document.getElementById("site-search-form");
   if (!form) return;
@@ -142,17 +154,39 @@
     }
   });
 })();
-</script><section class="home-latest">
+</script>
+
+<section class="home-latest">
   <h2>Derniers articles</h2>
-  <ul>
-    {{ range first 8 (where .Site.RegularPages "Section" "articles").ByDate.Reverse }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
+  
+  <div class="latest-list">
+    {{ range first 6 (where .Site.RegularPages "Section" "articles").ByDate.Reverse }}
+      <article class="latest-item">
+        <h3>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        
+        <div class="article-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "2 Jan 2006" }}
+          </time>
+          <span class="separator">·</span>
+          <span>{{ .ReadingTime }} min</span>
+        </div>
+
+        {{ with .Summary }}
+          <p class="latest-excerpt">{{ . | truncate 140 }}</p>
+        {{ end }}
+      </article>
     {{ end }}
-  </ul>
-  <p><a href="/articles/">Voir tous les articles →</a></p>
-</section><section class="home-categories">
+  </div>
+
+  <p class="see-all">
+    <a href="/articles/">Voir tous les articles →</a>
+  </p>
+</section>
+
+<section class="home-categories">
   <h2>Explorer les catégories</h2>
   <ul>
     {{ range .Site.Taxonomies.categories }}
@@ -162,16 +196,24 @@
     {{ end }}
   </ul>
   <p><a href="/categories/">Voir toutes les catégories →</a></p>
-</section><section class="home-encyclopedie">
+</section>
+
+<section class="home-encyclopedie">
   <h2>L’Encyclopédie</h2>
   <p>Des fiches accessibles pour comprendre les objets, les phénomènes et les situations qui nous entourent.</p>
   <p><a href="/encyclopedie/">Explorer l’Encyclopédie →</a></p>
-</section><section class="home-guides">
+</section>
+
+<section class="home-guides">
   <h2>Les guides pratiques</h2>
   <p>Des conseils étape par étape pour résoudre un problème, effectuer une démarche ou trouver une solution concrète.</p>
   <p><a href="/guides/">Découvrir les guides pratiques →</a></p>
-</section><section class="home-about">
+</section>
+
+<section class="home-about">
   <h2>À propos</h2>
   <p>Les Petits Pourquoi a pour objectif de rendre les sujets du quotidien plus faciles à comprendre grâce à des contenus clairs et structurés.</p>
   <p><a href="/about/">Découvrir le projet →</a></p>
-</section>{{ end }}
+</section>
+
+{{ end }}
