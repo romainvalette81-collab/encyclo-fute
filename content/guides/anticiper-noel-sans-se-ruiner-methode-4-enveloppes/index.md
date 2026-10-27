@@ -3,7 +3,7 @@ title: "Comment anticiper Noël sans se ruiner (méthode des 4 enveloppes)"
 description: "Une méthode simple en 4 enveloppes pour anticiper Noël, répartir le budget et éviter le stress de décembre… sans se priver de l’essentiel."
 slug: "anticiper-noel-sans-se-ruiner-methode-4-enveloppes"
 date: 2026-10-25
-categories: ["Guides", "Finance", "Pouvoir d’achat"]
+categories: ["Pouvoir d’achat"]
 ---
 
 # Comment anticiper Noël sans se ruiner (méthode des 4 enveloppes)
