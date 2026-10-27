@@ -3,7 +3,7 @@ title: "Comment régler la tension du fil de sa machine à coudre"
 description: "Boucles sous le tissu, points qui tirent, fil qui casse : on explique simplement comment diagnostiquer et corriger la tension du fil d'une machine à coudre, étape par étape."
 slug: "comment-regler-tension-fil-machine-a-coudre"
 date: 2026-10-27
-categories: ["Guides", "Objets Du Quotidien"]
+categories: ["Guides", "Quotidien"]
 ---
 
 # Comment régler la tension du fil de sa machine à coudre
