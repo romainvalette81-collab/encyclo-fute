@@ -2,7 +2,7 @@
 title: "Pourquoi les micro-ondes tournent ?"
 description: "Un mouvement qui semble simple… mais essentiel pour la répartition de chaleur, la sécurité et l’efficacité de cuisson."
 date: 2026-09-28
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["micro-ondes", "cuisine", "chauffage", "science"]
 draft: false
 ---
