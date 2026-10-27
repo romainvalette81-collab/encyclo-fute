@@ -2,7 +2,7 @@
 title: "Pourquoi les feutres sèchent même quand le capuchon est mis ?"
 description: "Un phénomène frustrant… mais logique quand on comprend l’encre, l’évaporation, la porosité et la mécanique interne du feutre."
 date: 2026-10-07
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["feutres", "encre", "évaporation", "écriture"]
 draft: false
 ---
