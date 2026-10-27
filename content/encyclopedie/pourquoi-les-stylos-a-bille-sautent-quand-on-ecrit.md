@@ -2,7 +2,7 @@
 title: "Pourquoi les stylos à bille sautent quand on écrit ?"
 description: "Un phénomène agaçant… mais qui s’explique par la mécanique, l’encre, la pression et la qualité de la bille."
 date: 2026-09-29
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["stylo", "écriture", "bille", "quotidien"]
 draft: false
 ---
