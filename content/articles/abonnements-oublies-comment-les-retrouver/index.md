@@ -3,7 +3,7 @@ title: "Vous payez encore des abonnements oubliés : comment les retrouver en 15
 description: "Streaming, apps, box, essais gratuits… Beaucoup de foyers paient encore des abonnements inutilisés. Voici la méthode simple pour les repérer et couper le gaspillage."
 slug: "abonnements-oublies-comment-les-retrouver"
 date: 2026-10-22
-categories: ["Finance", "Pouvoir d’achat", "Quotidien"]
+categories: ["Pouvoir d’achat", "Quotidien"]
 ---
 
 # Vous payez encore des abonnements oubliés : comment les retrouver en 15 minutes
