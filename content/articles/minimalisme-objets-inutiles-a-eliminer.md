@@ -3,7 +3,7 @@ title: "10 objets inutiles à éliminer pour alléger son quotidien"
 date: 2026-09-23T00:01:00
 description: "Une sélection d’objets qui encombrent la maison et la charge mentale, à retirer sans regret."
 categories: ["minimalisme"]
-tags: ["désencombrement", "quotidien", "organisation"]
+tags: ["désencombrement", "Quotidien", "organisation"]
 draft: false
 ---
 
