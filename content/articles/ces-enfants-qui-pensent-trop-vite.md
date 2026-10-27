@@ -3,7 +3,7 @@ title: "Ces enfants qui pensent trop vite pour le monde qui les entoure"
 description: "Derrière les enfants curieux, exigeants ou parfois difficiles, découvrez les besoins, les émotions et les défis que les adultes ne voient pas toujours."
 slug: "ces-enfants-qui-pensent-trop-vite"
 date: 2026-10-12
-categories: ["Enfance", "Comprendre les différences", "Éducation"]
+categories: ["Enfance", "Comprendre les différences"]
 ---
 
 # Ces enfants qui pensent trop vite pour le monde qui les entoure
