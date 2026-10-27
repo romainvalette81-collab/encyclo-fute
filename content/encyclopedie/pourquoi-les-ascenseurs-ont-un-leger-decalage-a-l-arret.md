@@ -2,7 +2,7 @@
 title: "Pourquoi les ascenseurs ont un léger décalage à l’arrêt ?"
 description: "Un phénomène discret… mais lié à la mécanique, aux capteurs, à la sécurité et au confort des passagers."
 date: 2026-10-06
-categories: ["Encyclopédie", "Technologie"]
+categories: ["Encyclopédie", "Tech"]
 tags: ["ascenseur", "mécanique", "sécurité", "quotidien"]
 draft: false
 ---
