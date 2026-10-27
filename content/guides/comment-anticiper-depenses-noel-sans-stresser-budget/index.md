@@ -3,7 +3,7 @@ title: "Comment anticiper les dépenses de Noël sans stresser son budget"
 description: "Noël n’a pas besoin de faire exploser le budget de décembre. Voici une méthode simple pour anticiper les dépenses, sans stress ni calculs compliqués."
 slug: "comment-anticiper-depenses-noel-sans-stresser-budget"
 date: 2026-10-23
-categories: ["Guides", "Finance", "Pouvoir d’achat"]
+categories: ["Pouvoir d’achat"]
 ---
 
 # Comment anticiper les dépenses de Noël sans stresser son budget
