@@ -2,7 +2,7 @@
 title: "Pourquoi les sacs de chips sont à moitié vides ?"
 description: "Un choix qui semble trompeur… mais qui est essentiel pour la conservation, la fraîcheur et la protection des chips."
 date: 2026-09-27
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["chips", "emballage", "alimentation", "industrie"]
 draft: false
 ---
