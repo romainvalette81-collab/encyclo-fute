@@ -3,7 +3,7 @@ title: "Biathlon : pourquoi ça fascine tant (et ce que ça apprend sur la conce
 description: "Courir à bout de souffle puis viser juste : le biathlon fascine par son contraste. Voici ce qu’il révèle sur la concentration, le calme et la performance."
 slug: "biathlon-pourquoi-ca-fascine-concentration"
 date: 2026-10-26
-categories: ["Sport", "Apprentissage", "Quotidien"]
+categories: ["Sport", "Enfance", "Quotidien"]
 ---
 
 # Biathlon : pourquoi ça fascine tant (et ce que ça apprend sur la concentration)
