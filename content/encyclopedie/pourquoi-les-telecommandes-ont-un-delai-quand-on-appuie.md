@@ -2,7 +2,7 @@
 title: "Pourquoi les télécommandes ont un délai quand on appuie ?"
 description: "Un petit délai agaçant… mais qui s’explique par l’infrarouge, le décodage, la latence électronique et la gestion d’énergie."
 date: 2026-10-03
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["télécommande", "infrarouge", "électronique", "latence"]
 draft: false
 ---
