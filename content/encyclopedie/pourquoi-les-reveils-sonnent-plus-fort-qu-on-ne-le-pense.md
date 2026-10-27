@@ -2,7 +2,7 @@
 title: "Pourquoi les réveils sonnent plus fort qu’on ne le pense ?"
 description: "Un son qui paraît agressif… mais qui est conçu pour traverser le sommeil, la fatigue et les bruits ambiants."
 date: 2026-10-09
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["réveil", "sommeil", "son", "quotidien"]
 draft: false
 ---
