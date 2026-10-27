@@ -3,7 +3,7 @@ title: "Plum : l’application qui met de côté à votre place (sans y penser c
 description: "Plum automatise l’épargne en analysant vos dépenses et en mettant de petites sommes de côté. Voici comment ça marche, à qui ça s’adresse, et ce qu’il faut savoir avant de commencer."
 slug: "plum-application-epargne-automatique"
 date: 2026-10-21
-categories: ["Finance", "Pouvoir d’achat", "Quotidien"]
+categories: ["Pouvoir d’achat", "Quotidien"]
 ---
 
 # Plum : l’application qui met de côté à votre place (sans y penser chaque semaine)
