@@ -1,4 +1,7 @@
-À propos de Les Petits Pourquoi
+---
+title: "À propos"
+date: 2026-10-27
+---
 
 Certaines questions ne quittent jamais vraiment.
 
@@ -13,7 +16,7 @@ Adulte, on les garde souvent pour soi — faute de temps, ou faute d’un endroi
 **Les Petits Pourquoi** est né de cette idée très simple :  
 prendre au sérieux les questions du quotidien, et y répondre clairement.
 
-### Notre promesse
+## Notre promesse
 
 Des réponses simples, accessibles et concrètes aux questions que l’on se pose vraiment :
 
@@ -24,7 +27,7 @@ Des réponses simples, accessibles et concrètes aux questions que l’on se pos
 
 Sans jargon inutile. Sans blabla. Juste l’essentiel pour mieux comprendre.
 
-### Ce que vous trouverez ici
+## Ce que vous trouverez ici
 
 - Des fiches d’encyclopédie pour comprendre le « pourquoi »
 - Des guides pratiques pour savoir « comment faire »
