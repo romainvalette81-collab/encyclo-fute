@@ -2,7 +2,7 @@
 title: "Pourquoi les vitres deviennent opaques avec la buée ?"
 description: "Un phénomène quotidien… mais qui repose sur la physique, la lumière, la condensation et la structure du verre."
 date: 2026-09-30
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["vitres", "buée", "condensation", "physique"]
 draft: false
 ---
