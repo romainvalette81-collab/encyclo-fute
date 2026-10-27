@@ -2,7 +2,7 @@
 title: "Pourquoi les claviers d’ordinateur ne sont pas en ordre alphabétique ?"
 description: "Un choix historique… mais aussi ergonomique, mécanique et scientifique. Le clavier QWERTY/AZERTY n’est pas un hasard."
 date: 2026-10-04
-categories: ["Encyclopédie", "Technologie"]
+categories: ["Encyclopédie", "Tech"]
 tags: ["clavier", "informatique", "QWERTY", "AZERTY", "histoire"]
 draft: false
 ---
