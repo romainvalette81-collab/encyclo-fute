@@ -110,6 +110,17 @@ main {
 }
 
 /* --------------------------------------------------
+   HERO ACCUEIL
+-------------------------------------------------- */
+
+.hero-lead {
+  font-size: 1.15rem;
+  color: #333;
+  margin: 12px 0 18px;
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------
    META DATE + TEMPS DE LECTURE
 -------------------------------------------------- */
 
@@ -124,6 +135,42 @@ main {
 
 .article-meta .separator {
   color: #ccc;
+}
+
+/* --------------------------------------------------
+   LISTE DERNIERS ARTICLES (accueil)
+-------------------------------------------------- */
+
+.latest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: 24px 0 32px;
+}
+
+.latest-item h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.latest-item h3 a {
+  color: #111;
+}
+
+.latest-item h3 a:hover {
+  color: #1a5fad;
+}
+
+.latest-excerpt {
+  margin: 8px 0 0;
+  color: #444;
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+
+.see-all {
+  margin-top: 8px;
 }
 
 /* --------------------------------------------------
