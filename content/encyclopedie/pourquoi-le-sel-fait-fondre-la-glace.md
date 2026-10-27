@@ -2,7 +2,7 @@
 title: "Pourquoi le sel fait-il fondre la glace ? L’explication simple"
 description: "Pourquoi le sel fait-il fondre la glace et le verglas ? Découvrez simplement comment le sel abaisse le point de congélation de l’eau et pourquoi il devient moins efficace quand il fait très froid."
 date: 2026-09-26
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["sel", "glace", "verglas", "hiver", "science"]
 draft: false
 ---
