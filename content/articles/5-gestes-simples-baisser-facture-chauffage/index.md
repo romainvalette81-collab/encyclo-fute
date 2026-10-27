@@ -3,7 +3,7 @@ title: "Les 5 gestes simples pour baisser sa facture de chauffage"
 description: "Sans travaux lourds ni grand renoncement : 5 gestes concrets pour réduire la facture de chauffage cet hiver."
 slug: "5-gestes-simples-baisser-facture-chauffage"
 date: 2026-10-18
-categories: ["Maison", "Finance", "Quotidien"]
+categories: ["Pouvoir d'achat", "Quotidien"]
 ---
 
 # Les 5 gestes simples pour baisser sa facture de chauffage
