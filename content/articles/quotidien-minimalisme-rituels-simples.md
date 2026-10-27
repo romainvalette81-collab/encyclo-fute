@@ -2,7 +2,7 @@
 title: "Des rituels simples pour alléger son quotidien"
 date: 2026-10-05T00:01:00
 description: "Des rituels minimalistes pour réduire la charge mentale et retrouver un rythme plus fluide."
-categories: ["vie quotidienne"]
+categories: ["Quotidien"]
 tags: ["minimalisme", "routine", "organisation"]
 draft: false
 ---
