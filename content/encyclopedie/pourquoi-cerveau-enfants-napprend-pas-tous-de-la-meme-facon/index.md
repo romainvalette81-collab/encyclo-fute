@@ -3,7 +3,7 @@ title: "Pourquoi le cerveau des enfants n’apprend pas tous de la même façon 
 description: "Tous les enfants n’apprennent pas au même rythme ni de la même manière. Voici ce que le fonctionnement du cerveau permet de comprendre simplement."
 slug: "pourquoi-cerveau-enfants-napprend-pas-tous-de-la-meme-facon"
 date: 2026-10-13
-categories: ["Encyclopédie", "Enfance", "Apprentissages"]
+categories: ["Encyclopédie", "Enfance", "Apprentissage"]
 ---
 
 # Pourquoi le cerveau des enfants n’apprend pas tous de la même façon ?
