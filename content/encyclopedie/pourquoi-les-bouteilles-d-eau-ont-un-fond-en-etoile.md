@@ -2,7 +2,7 @@
 title: "Pourquoi les bouteilles d’eau ont un fond en étoile ?"
 description: "Un design qui semble esthétique… mais qui répond à des contraintes de pression, stabilité et résistance."
 date: 2026-09-26
-categories: ["Encyclopédie", "Objets du quotidien"]
+categories: ["Encyclopédie", "Quotidien"]
 tags: ["bouteilles", "plastique", "design", "quotidien"]
 draft: false
 ---
