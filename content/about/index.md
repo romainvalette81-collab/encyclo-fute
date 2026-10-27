@@ -3,7 +3,7 @@ title: "À propos"
 date: 2026-10-27
 ---
 
-Certaines questions ne quittent jamais vraiment.
+##Certaines questions ne quittent jamais vraiment.
 
 Pourquoi les bananes noircissent si vite.  
 Pourquoi un voyant s’allume dans la voiture.  
