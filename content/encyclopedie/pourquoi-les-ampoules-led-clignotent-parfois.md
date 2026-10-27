@@ -2,7 +2,7 @@
 title: "Pourquoi les ampoules LED clignotent parfois ?"
 description: "Un phénomène surprenant… mais lié à l’électronique, au courant, aux drivers et aux interrupteurs modernes."
 date: 2026-10-10
-categories: ["Encyclopédie", "Technologie"]
+categories: ["Encyclopédie", "Tech"]
 tags: ["LED", "éclairage", "électronique", "maison"]
 draft: false
 ---
