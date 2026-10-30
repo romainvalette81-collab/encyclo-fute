@@ -1,0 +1,142 @@
+[
+  {
+    "ville": "Paris",
+    "gentile": "Parisien, Parisienne",
+    "population": "2 100 000",
+    "departement": "Paris",
+    "description": "Capitale de la France, centre politique, économique et culturel."
+  },
+  {
+    "ville": "Lyon",
+    "gentile": "Lyonnais, Lyonnaise",
+    "population": "522 000",
+    "departement": "Rhône",
+    "description": "Ancienne capitale des Gaules, réputée pour sa gastronomie et ses traboules."
+  },
+  {
+    "ville": "Marseille",
+    "gentile": "Marseillais, Marseillaise",
+    "population": "870 000",
+    "departement": "Bouches-du-Rhône",
+    "description": "Plus ancienne ville de France, port méditerranéen au caractère trempé."
+  },
+  {
+    "ville": "Toulouse",
+    "gentile": "Toulousain, Toulousaine",
+    "population": "493 000",
+    "departement": "Haute-Garonne",
+    "description": "La Ville rose, capitale de l’aéronautique et du rugby."
+  },
+  {
+    "ville": "Bordeaux",
+    "gentile": "Bordelais, Bordelaise",
+    "population": "259 000",
+    "departement": "Gironde",
+    "description": "Capitale mondiale du vin et élégante ville du Sud-Ouest."
+  },
+  {
+    "ville": "Lille",
+    "gentile": "Lillois, Lilloise",
+    "population": "236 000",
+    "departement": "Nord",
+    "description": "Grande ville du Nord, connue pour sa braderie et son architecture flamande."
+  },
+  {
+    "ville": "Nice",
+    "gentile": "Niçois, Niçoise",
+    "population": "343 000",
+    "departement": "Alpes-Maritimes",
+    "description": "Perle de la Côte d’Azur, entre mer et collines."
+  },
+  {
+    "ville": "Nantes",
+    "gentile": "Nantais, Nantaise",
+    "population": "320 000",
+    "departement": "Loire-Atlantique",
+    "description": "Ancienne capitale de la Bretagne, ville dynamique et verte."
+  },
+  {
+    "ville": "Strasbourg",
+    "gentile": "Strasbourgeois, Strasbourgeoise",
+    "population": "290 000",
+    "departement": "Bas-Rhin",
+    "description": "Capitale européenne et ville-symbole de l’Alsace."
+  },
+  {
+    "ville": "Montpellier",
+    "gentile": "Montpelliérain, Montpelliéraine",
+    "population": "299 000",
+    "departement": "Hérault",
+    "description": "Ville étudiante du Sud, en forte croissance."
+  },
+  {
+    "ville": "Rennes",
+    "gentile": "Rennais, Rennaise",
+    "population": "222 000",
+    "departement": "Ille-et-Vilaine",
+    "description": "Capitale de la Bretagne, réputée pour sa qualité de vie."
+  },
+  {
+    "ville": "Reims",
+    "gentile": "Rémois, Rémoise",
+    "population": "180 000",
+    "departement": "Marne",
+    "description": "Ville des sacres et du champagne."
+  },
+  {
+    "ville": "Metz",
+    "gentile": "Messin, Messine",
+    "population": "120 000",
+    "departement": "Moselle",
+    "description": "Ville d’art et d’histoire au confluent de la Moselle et de la Seille."
+  },
+  {
+    "ville": "Troyes",
+    "gentile": "Troyen, Troyenne",
+    "population": "62 000",
+    "departement": "Aube",
+    "description": "Cité médiévale aux nombreuses maisons à colombages."
+  },
+  {
+    "ville": "Annecy",
+    "gentile": "Annécien, Annécienne",
+    "population": "131 000",
+    "departement": "Haute-Savoie",
+    "description": "La Venise des Alpes, célèbre pour son lac."
+  },
+  {
+    "ville": "Bayonne",
+    "gentile": "Bayonnais, Bayonnaise",
+    "population": "52 000",
+    "departement": "Pyrénées-Atlantiques",
+    "description": "Capitale du Pays basque français, connue pour son jambon et ses fêtes."
+  },
+  {
+    "ville": "Colmar",
+    "gentile": "Colmarien, Colmarienne",
+    "population": "68 000",
+    "departement": "Haut-Rhin",
+    "description": "Joyau de la route des vins d’Alsace."
+  },
+  {
+    "ville": "La Rochelle",
+    "gentile": "Rochelais, Rochelais",
+    "population": "77 000",
+    "departement": "Charente-Maritime",
+    "description": "Ville portuaire au fort caractère, entre tours et océan."
+  },
+  {
+    "ville": "Dijon",
+    "gentile": "Dijonnais, Dijonnaise",
+    "population": "159 000",
+    "departement": "Côte-d’Or",
+    "description": "Capitale de la moutarde et de la Bourgogne."
+  },
+  {
+    "ville": "Avignon",
+    "gentile": "Avignonnais, Avignonnaise",
+    "population": "92 000",
+    "departement": "Vaucluse",
+    "description": "Cité des Papes et du célèbre pont."
+  }
+]
