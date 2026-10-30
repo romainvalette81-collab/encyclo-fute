@@ -18,14 +18,14 @@
     "gentile": "Marseillais, Marseillaise",
     "population": "870 000",
     "departement": "Bouches-du-Rhône",
-    "description": "Plus ancienne ville de France, port méditerranéen au caractère trempé."
+    "description": "Plus ancienne ville de France, grand port méditerranéen."
   },
   {
     "ville": "Toulouse",
     "gentile": "Toulousain, Toulousaine",
     "population": "493 000",
     "departement": "Haute-Garonne",
-    "description": "La Ville rose, capitale de l’aéronautique et du rugby."
+    "description": "La Ville rose, capitale européenne de l’aéronautique."
   },
   {
     "ville": "Bordeaux",
@@ -67,21 +67,21 @@
     "gentile": "Montpelliérain, Montpelliéraine",
     "population": "299 000",
     "departement": "Hérault",
-    "description": "Ville étudiante du Sud, en forte croissance."
+    "description": "Grande ville étudiante du Sud, en forte croissance."
   },
   {
     "ville": "Rennes",
     "gentile": "Rennais, Rennaise",
     "population": "222 000",
     "departement": "Ille-et-Vilaine",
-    "description": "Capitale de la Bretagne, réputée pour sa qualité de vie."
+    "description": "Capitale de la Bretagne administrative."
   },
   {
     "ville": "Reims",
     "gentile": "Rémois, Rémoise",
     "population": "180 000",
     "departement": "Marne",
-    "description": "Ville des sacres et du champagne."
+    "description": "Ville des sacres des rois de France et du champagne."
   },
   {
     "ville": "Metz",
@@ -102,14 +102,14 @@
     "gentile": "Annécien, Annécienne",
     "population": "131 000",
     "departement": "Haute-Savoie",
-    "description": "La Venise des Alpes, célèbre pour son lac."
+    "description": "Surnommée la Venise des Alpes, célèbre pour son lac."
   },
   {
     "ville": "Bayonne",
     "gentile": "Bayonnais, Bayonnaise",
     "population": "52 000",
     "departement": "Pyrénées-Atlantiques",
-    "description": "Capitale du Pays basque français, connue pour son jambon et ses fêtes."
+    "description": "Capitale du Pays basque français."
   },
   {
     "ville": "Colmar",
@@ -123,7 +123,7 @@
     "gentile": "Rochelais, Rochelais",
     "population": "77 000",
     "departement": "Charente-Maritime",
-    "description": "Ville portuaire au fort caractère, entre tours et océan."
+    "description": "Ville portuaire historique entre tours et océan."
   },
   {
     "ville": "Dijon",
@@ -137,6 +137,517 @@
     "gentile": "Avignonnais, Avignonnaise",
     "population": "92 000",
     "departement": "Vaucluse",
-    "description": "Cité des Papes et du célèbre pont."
+    "description": "Cité des Papes."
+  },
+  {
+    "ville": "Grenoble",
+    "gentile": "Grenoblois, Grenobloise",
+    "population": "158 000",
+    "departement": "Isère",
+    "description": "Capitale des Alpes, ville de science et de montagne."
+  },
+  {
+    "ville": "Toulon",
+    "gentile": "Toulonnais, Toulonnaise",
+    "population": "180 000",
+    "departement": "Var",
+    "description": "Grand port militaire de la Méditerranée."
+  },
+  {
+    "ville": "Le Havre",
+    "gentile": "Havrais, Havraise",
+    "population": "166 000",
+    "departement": "Seine-Maritime",
+    "description": "Port normand reconstruit par Auguste Perret."
+  },
+  {
+    "ville": "Saint-Étienne",
+    "gentile": "Stéphanois, Stéphanoise",
+    "population": "174 000",
+    "departement": "Loire",
+    "description": "Ancienne ville industrielle du Forez."
+  },
+  {
+    "ville": "Angers",
+    "gentile": "Angevin, Angevine",
+    "population": "155 000",
+    "departement": "Maine-et-Loire",
+    "description": "Ville du Val de Loire, connue pour son château et ses rosiers."
+  },
+  {
+    "ville": "Nîmes",
+    "gentile": "Nîmois, Nîmoise",
+    "population": "148 000",
+    "departement": "Gard",
+    "description": "Ville romaine célèbre pour ses arènes et la Maison Carrée."
+  },
+  {
+    "ville": "Villeurbanne",
+    "gentile": "Villeurbannais, Villeurbannaise",
+    "population": "156 000",
+    "departement": "Rhône",
+    "description": "Grande ville de la métropole de Lyon."
+  },
+  {
+    "ville": "Aix-en-Provence",
+    "gentile": "Aixois, Aixoise",
+    "population": "147 000",
+    "departement": "Bouches-du-Rhône",
+    "description": "Ville de Cézanne et de l’élégance provençale."
+  },
+  {
+    "ville": "Clermont-Ferrand",
+    "gentile": "Clermontois, Clermontoise",
+    "population": "147 000",
+    "departement": "Puy-de-Dôme",
+    "description": "Capitale des volcans d’Auvergne."
+  },
+  {
+    "ville": "Limoges",
+    "gentile": "Limougeaud, Limougeaude",
+    "population": "131 000",
+    "departement": "Haute-Vienne",
+    "description": "Ville de la porcelaine."
+  },
+  {
+    "ville": "Tours",
+    "gentile": "Tourangeau, Tourangelle",
+    "population": "137 000",
+    "departement": "Indre-et-Loire",
+    "description": "Ville du Val de Loire et de la pureté de la langue française."
+  },
+  {
+    "ville": "Amiens",
+    "gentile": "Amiénois, Amiénoise",
+    "population": "134 000",
+    "departement": "Somme",
+    "description": "Ville de la cathédrale gothique et de Jules Verne."
+  },
+  {
+    "ville": "Perpignan",
+    "gentile": "Perpignanais, Perpignanaise",
+    "population": "119 000",
+    "departement": "Pyrénées-Orientales",
+    "description": "Capitale de la Catalogne nord."
+  },
+  {
+    "ville": "Besançon",
+    "gentile": "Bisontin, Bisontine",
+    "population": "118 000",
+    "departement": "Doubs",
+    "description": "Ville fortifiée de Vauban."
+  },
+  {
+    "ville": "Orléans",
+    "gentile": "Orléanais, Orléanaise",
+    "population": "117 000",
+    "departement": "Loiret",
+    "description": "Ville de Jeanne d’Arc."
+  },
+  {
+    "ville": "Rouen",
+    "gentile": "Rouennais, Rouennaise",
+    "population": "114 000",
+    "departement": "Seine-Maritime",
+    "description": "Ancienne capitale de la Normandie."
+  },
+  {
+    "ville": "Caen",
+    "gentile": "Caennais, Caennaise",
+    "population": "108 000",
+    "departement": "Calvados",
+    "description": "Ville de Guillaume le Conquérant."
+  },
+  {
+    "ville": "Mulhouse",
+    "gentile": "Mulhousien, Mulhousienne",
+    "population": "108 000",
+    "departement": "Haut-Rhin",
+    "description": "Ville industrielle alsacienne."
+  },
+  {
+    "ville": "Nancy",
+    "gentile": "Nancéien, Nancéienne",
+    "population": "104 000",
+    "departement": "Meurthe-et-Moselle",
+    "description": "Ville de la Place Stanislas."
+  },
+  {
+    "ville": "Argenteuil",
+    "gentile": "Argenteuillais, Argenteuillaise",
+    "population": "111 000",
+    "departement": "Val-d’Oise",
+    "description": "Grande ville de la banlieue parisienne."
+  },
+  {
+    "ville": "Saint-Denis",
+    "gentile": "Dionysien, Dionysienne",
+    "population": "113 000",
+    "departement": "Seine-Saint-Denis",
+    "description": "Ville de la basilique royale et du Stade de France."
+  },
+  {
+    "ville": "Montreuil",
+    "gentile": "Montreuillois, Montreuilloise",
+    "population": "111 000",
+    "departement": "Seine-Saint-Denis",
+    "description": "Ville dynamique de la proche banlieue parisienne."
+  },
+  {
+    "ville": "Roubaix",
+    "gentile": "Roubaisien, Roubaisienne",
+    "population": "99 000",
+    "departement": "Nord",
+    "description": "Ancienne capitale de l’industrie textile."
+  },
+  {
+    "ville": "Tourcoing",
+    "gentile": "Tourquennois, Tourquennoise",
+    "population": "99 000",
+    "departement": "Nord",
+    "description": "Ville du Nord liée à Roubaix."
+  },
+  {
+    "ville": "Nanterre",
+    "gentile": "Nanterrien, Nanterrienne",
+    "population": "97 000",
+    "departement": "Hauts-de-Seine",
+    "description": "Préfecture des Hauts-de-Seine."
+  },
+  {
+    "ville": "Avignon",
+    "gentile": "Avignonnais, Avignonnaise",
+    "population": "92 000",
+    "departement": "Vaucluse",
+    "description": "Cité des Papes."
+  },
+  {
+    "ville": "Vitry-sur-Seine",
+    "gentile": "Vitriots, Vitriotes",
+    "population": "95 000",
+    "departement": "Val-de-Marne",
+    "description": "Grande commune du Val-de-Marne."
+  },
+  {
+    "ville": "Créteil",
+    "gentile": "Cristolien, Cristolienne",
+    "population": "93 000",
+    "departement": "Val-de-Marne",
+    "description": "Préfecture du Val-de-Marne."
+  },
+  {
+    "ville": "Dunkerque",
+    "gentile": "Dunkerquois, Dunkerquoise",
+    "population": "87 000",
+    "departement": "Nord",
+    "description": "Port du Nord et ville de Jean Bart."
+  },
+  {
+    "ville": "Poitiers",
+    "gentile": "Poitevin, Poitevine",
+    "population": "90 000",
+    "departement": "Vienne",
+    "description": "Ville étudiante et historique du Poitou."
+  },
+  {
+    "ville": "Versailles",
+    "gentile": "Versaillais, Versaillaise",
+    "population": "85 000",
+    "departement": "Yvelines",
+    "description": "Ville du château de Louis XIV."
+  },
+  {
+    "ville": "Pau",
+    "gentile": "Palois, Paloise",
+    "population": "77 000",
+    "departement": "Pyrénées-Atlantiques",
+    "description": "Ville de Henri IV, au pied des Pyrénées."
+  },
+  {
+    "ville": "La Rochelle",
+    "gentile": "Rochelais, Rochelais",
+    "population": "77 000",
+    "departement": "Charente-Maritime",
+    "description": "Ville portuaire historique."
+  },
+  {
+    "ville": "Calais",
+    "gentile": "Calaisien, Calaisienne",
+    "population": "73 000",
+    "departement": "Pas-de-Calais",
+    "description": "Porte de la France vers l’Angleterre."
+  },
+  {
+    "ville": "Antibes",
+    "gentile": "Antibois, Antiboise",
+    "population": "75 000",
+    "departement": "Alpes-Maritimes",
+    "description": "Ville de la Côte d’Azur entre Cannes et Nice."
+  },
+  {
+    "ville": "Cannes",
+    "gentile": "Cannois, Cannoise",
+    "population": "74 000",
+    "departement": "Alpes-Maritimes",
+    "description": "Ville du Festival de cinéma."
+  },
+  {
+    "ville": "Béziers",
+    "gentile": "Biterrois, Biterroise",
+    "population": "78 000",
+    "departement": "Hérault",
+    "description": "Ville du Languedoc connue pour ses arènes et son rugby."
+  },
+  {
+    "ville": "Colmar",
+    "gentile": "Colmarien, Colmarienne",
+    "population": "68 000",
+    "departement": "Haut-Rhin",
+    "description": "Joyau de la route des vins d’Alsace."
+  },
+  {
+    "ville": "Bourges",
+    "gentile": "Berruyer, Berruyère",
+    "population": "64 000",
+    "departement": "Cher",
+    "description": "Ville de la cathédrale et du Printemps de Bourges."
+  },
+  {
+    "ville": "Auch",
+    "gentile": "Auscitain, Auscitaine",
+    "population": "22 000",
+    "departement": "Gers",
+    "description": "Préfecture du Gers, gentilé très caractéristique."
+  },
+  {
+    "ville": "Foix",
+    "gentile": "Fuxéen, Fuxéenne",
+    "population": "9 700",
+    "departement": "Ariège",
+    "description": "Petite préfecture pyrénéenne au gentilé élégant."
+  },
+  {
+    "ville": "Thiers",
+    "gentile": "Thiernois, Thiernoise",
+    "population": "11 500",
+    "departement": "Puy-de-Dôme",
+    "description": "Capitale française de la coutellerie."
+  },
+  {
+    "ville": "Périgueux",
+    "gentile": "Périgourdin, Périgourdine",
+    "population": "29 000",
+    "departement": "Dordogne",
+    "description": "Capitale du Périgord."
+  },
+  {
+    "ville": "Albi",
+    "gentile": "Albigeois, Albigeoise",
+    "population": "49 000",
+    "departement": "Tarn",
+    "description": "Ville de la cathédrale Sainte-Cécile et de Toulouse-Lautrec."
+  },
+  {
+    "ville": "Cahors",
+    "gentile": "Cadurcien, Cadurcienne",
+    "population": "20 000",
+    "departement": "Lot",
+    "description": "Ville du Lot et du vin de Cahors."
+  },
+  {
+    "ville": "Rodez",
+    "gentile": "Ruthénois, Ruthénoise",
+    "population": "24 000",
+    "departement": "Aveyron",
+    "description": "Préfecture de l’Aveyron."
+  },
+  {
+    "ville": "Mende",
+    "gentile": "Mendois, Mendoise",
+    "population": "12 000",
+    "departement": "Lozère",
+    "description": "Préfecture de la Lozère."
+  },
+  {
+    "ville": "Gap",
+    "gentile": "Gapençais, Gapençaise",
+    "population": "41 000",
+    "departement": "Hautes-Alpes",
+    "description": "Préfecture des Hautes-Alpes."
+  },
+  {
+    "ville": "Digne-les-Bains",
+    "gentile": "Dignois, Dignoise",
+    "population": "16 500",
+    "departement": "Alpes-de-Haute-Provence",
+    "description": "Préfecture des Alpes-de-Haute-Provence."
+  },
+  {
+    "ville": "Privas",
+    "gentile": "Privadois, Privadoise",
+    "population": "8 500",
+    "departement": "Ardèche",
+    "description": "Petite préfecture de l’Ardèche."
+  },
+  {
+    "ville": "Guéret",
+    "gentile": "Guérétois, Guérétoise",
+    "population": "13 000",
+    "departement": "Creuse",
+    "description": "Préfecture de la Creuse."
+  },
+  {
+    "ville": "Tulle",
+    "gentile": "Tulliste",
+    "population": "14 500",
+    "departement": "Corrèze",
+    "description": "Préfecture de la Corrèze."
+  },
+  {
+    "ville": "Aurillac",
+    "gentile": "Aurillacois, Aurillacoise",
+    "population": "26 000",
+    "departement": "Cantal",
+    "description": "Préfecture du Cantal."
+  },
+  {
+    "ville": "Moulins",
+    "gentile": "Moulinois, Moulinoise",
+    "population": "19 500",
+    "departement": "Allier",
+    "description": "Préfecture de l’Allier."
+  },
+  {
+    "ville": "Nevers",
+    "gentile": "Nivernais, Nivernaise",
+    "population": "33 000",
+    "departement": "Nièvre",
+    "description": "Préfecture de la Nièvre."
+  },
+  {
+    "ville": "Chartres",
+    "gentile": "Chartrain, Chartraine",
+    "population": "38 500",
+    "departement": "Eure-et-Loir",
+    "description": "Ville de la célèbre cathédrale."
+  },
+  {
+    "ville": "Évreux",
+    "gentile": "Ébroïcien, Ébroïcienne",
+    "population": "47 000",
+    "departement": "Eure",
+    "description": "Préfecture de l’Eure."
+  },
+  {
+    "ville": "Lisieux",
+    "gentile": "Lexovien, Lexovienne",
+    "population": "20 000",
+    "departement": "Calvados",
+    "description": "Ville de Sainte-Thérèse."
+  },
+  {
+    "ville": "Cherbourg",
+    "gentile": "Cherbourgeois, Cherbourgeoise",
+    "population": "35 000",
+    "departement": "Manche",
+    "description": "Port de la Manche."
+  },
+  {
+    "ville": "Saint-Malo",
+    "gentile": "Malouin, Malouine",
+    "population": "47 000",
+    "departement": "Ille-et-Vilaine",
+    "description": "Cité corsaire."
+  },
+  {
+    "ville": "Vannes",
+    "gentile": "Vannetais, Vannetaise",
+    "population": "54 000",
+    "departement": "Morbihan",
+    "description": "Ville du golfe du Morbihan."
+  },
+  {
+    "ville": "Lorient",
+    "gentile": "Lorientais, Lorientaise",
+    "population": "57 000",
+    "departement": "Morbihan",
+    "description": "Ville portuaire et de la Interceltique."
+  },
+  {
+    "ville": "Quimper",
+    "gentile": "Quimpérois, Quimpéroise",
+    "population": "64 000",
+    "departement": "Finistère",
+    "description": "Capitale historique de la Cornouaille."
+  },
+  {
+    "ville": "Brest",
+    "gentile": "Brestois, Brestoise",
+    "population": "140 000",
+    "departement": "Finistère",
+    "description": "Grand port militaire de Bretagne."
+  },
+  {
+    "ville": "Saint-Brieuc",
+    "gentile": "Briochin, Briochine",
+    "population": "44 000",
+    "departement": "Côtes-d’Armor",
+    "description": "Préfecture des Côtes-d’Armor."
+  },
+  {
+    "ville": "Laval",
+    "gentile": "Lavallois, Lavalloise",
+    "population": "50 000",
+    "departement": "Mayenne",
+    "description": "Préfecture de la Mayenne."
+  },
+  {
+    "ville": "Le Mans",
+    "gentile": "Manceau, Mancelle",
+    "population": "144 000",
+    "departement": "Sarthe",
+    "description": "Ville des 24 Heures."
+  },
+  {
+    "ville": "Angoulême",
+    "gentile": "Angoumoisin, Angoumoisine",
+    "population": "42 000",
+    "departement": "Charente",
+    "description": "Ville de la bande dessinée."
+  },
+  {
+    "ville": "Niort",
+    "gentile": "Niortais, Niortaise",
+    "population": "59 000",
+    "departement": "Deux-Sèvres",
+    "description": "Préfecture des Deux-Sèvres."
+  },
+  {
+    "ville": "Châteauroux",
+    "gentile": "Castelroussin, Castelroussine",
+    "population": "43 000",
+    "departement": "Indre",
+    "description": "Préfecture de l’Indre."
+  },
+  {
+    "ville": "Blois",
+    "gentile": "Blésois, Blésoise",
+    "population": "46 000",
+    "departement": "Loir-et-Cher",
+    "description": "Ville de château sur la Loire."
+  },
+  {
+    "ville": "Chambéry",
+    "gentile": "Chambérien, Chambérienne",
+    "population": "60 000",
+    "departement": "Savoie",
+    "description": "Ancienne capitale de la Savoie."
+  },
+  {
+    "ville": "Annecy",
+    "gentile": "Annécien, Annécienne",
+    "population": "131 000",
+    "departement": "Haute-Savoie",
+    "description": "La Venise des Alpes."
   }
 ]
