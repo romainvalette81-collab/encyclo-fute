@@ -90,7 +90,7 @@ Tapez le nom d’une ville ci-dessous pour connaître :
   <div id="gentile-result" hidden></div>
 </div>
 
-<script src="{{ "js/gentiles-search.js" | relURL }}" defer></script>
+<script src="/js/gentiles-search.js" defer></script>
 
 ## Les gentilés les plus surprenants de France
 
