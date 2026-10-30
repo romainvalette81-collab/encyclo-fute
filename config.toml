@@ -62,6 +62,11 @@ weight = 8
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [services]
   [services.googleAnalytics]
     ID = "G-8MFE6E69R7"
