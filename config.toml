@@ -40,19 +40,24 @@ url = "/articles/"
 weight = 4
 
 [[menu.main]]
+name = "Gentilés"
+url = "/gentiles/"
+weight = 5
+
+[[menu.main]]
 name = "Catégories"
 url = "/categories/"
-weight = 5
+weight = 6
 
 [[menu.main]]
 name = "À propos"
 url = "/about/"
-weight = 6
+weight = 7
 
 [[menu.main]]
 name = "Contact"
 url = "/contact/"
-weight = 7
+weight = 8
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
@@ -60,4 +65,3 @@ home = ["HTML", "RSS", "JSON"]
 [services]
   [services.googleAnalytics]
     ID = "G-8MFE6E69R7"
-    
