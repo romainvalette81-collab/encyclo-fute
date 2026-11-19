@@ -186,4 +186,5 @@ Sources secondaires (fin de campagne, prescription en pharmacie, vaccin Covid-19
 
 - [Comment appeler les secours efficacement : quel numéro, quoi dire, quoi faire](/guides/comment-appeler-les-secours/)
 - [Comment préparer sa maison pour l'hiver en 30 minutes par pièce](/guides/comment-preparer-maison-hiver-30-minutes-par-piece/)
-- [Les rituels du
+- [Les rituels du soir d'hiver qui aident vraiment à déconnecter](/guides/rituels-soir-hiver-deconnecter/)
+- [Pourquoi les fenêtres s'embuent plus en hiver](/encyclopedie/pourquoi-les-fenetres-sembuent-plus-en-hiver/)
