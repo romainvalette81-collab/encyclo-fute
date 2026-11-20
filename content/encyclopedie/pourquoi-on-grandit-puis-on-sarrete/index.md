@@ -120,5 +120,3 @@ La puberté accélère leur activité, mais les hormones qui participent à cett
 - **Pourquoi s'arrête-t-on de grandir ?** Parce que les cartilages de croissance se ferment.
 - **Peut-on encore grandir après ?** Une fois ces cartilages fermés, la croissance en hauteur est terminée.
 - **Le corps arrête-t-il de changer ?** Non, de nombreux tissus et organes continuent à évoluer.
-
-## Et maintenant, pourquoi ?
