@@ -1,3 +1,4 @@
+
 {{ define "main" }}
 
 <article class="encyclo-article">
@@ -16,6 +17,8 @@
   <div class="encyclo-content">
     {{ .Content }}
   </div>
+
+  {{ partial "liens-internes.html" . }}
 
 </article>
 
