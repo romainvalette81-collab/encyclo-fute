@@ -1,14 +1,4 @@
-
-{{ with .Params.curiosite }}
 <section class="liens-internes">
-  <h3>Et maintenant, pourquoi ?</h3>
-
-  <ul>
-    {{ range . }}
-      <li>{{ .question }}</li>
-    {{ end }}
-  </ul>
+  <h3>TEST FIL DE CURIOSITÉ</h3>
+  <p>Si tu lis ce message, le partial fonctionne.</p>
 </section>
-{{ else }}
-<p>Test : aucune curiosité trouvée.</p>
-{{ end }}
