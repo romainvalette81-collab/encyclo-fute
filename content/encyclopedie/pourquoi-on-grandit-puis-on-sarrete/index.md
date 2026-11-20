@@ -122,13 +122,3 @@ La puberté accélère leur activité, mais les hormones qui participent à cett
 - **Le corps arrête-t-il de changer ?** Non, de nombreux tissus et organes continuent à évoluer.
 
 ## Et maintenant, pourquoi ?
-
-Une réponse apporte souvent de nouvelles questions. Voici quelques pistes pour continuer :
-
-- Pourquoi la puberté accélère-t-elle la croissance ?
-- Pourquoi certaines personnes sont-elles plus grandes que d'autres ?
-- Comment les os se réparent-ils après une fracture ?
-- Pourquoi perd-on parfois quelques centimètres en vieillissant ?
-- Est-ce que le cerveau continue de se développer après la croissance ?
-
-**Une question n'est jamais une fin. C'est le début de dix autres.**
