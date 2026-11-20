@@ -1,12 +1,18 @@
-<section class="liens-internes">
-  <h3>Liens internes utiles</h3>
 
-  {{ $pages := .Site.RegularPages }}
-  {{ $pages = where $pages "Permalink" "!=" .Permalink }}
+{{ with .Params.curiosite }}
+<section class="liens-internes">
+  <h3>Et maintenant, pourquoi ?</h3>
 
   <ul>
-    {{ range first 3 $pages }}
-      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ range . }}
+      <li>
+        {{ if .url }}
+          <a href="{{ .url }}">{{ .question }}</a>
+        {{ else }}
+          {{ .question }}
+        {{ end }}
+      </li>
     {{ end }}
   </ul>
 </section>
+{{ end }}
