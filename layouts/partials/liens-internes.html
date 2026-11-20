@@ -5,14 +5,10 @@
 
   <ul>
     {{ range . }}
-      <li>
-        {{ if .url }}
-          <a href="{{ .url }}">{{ .question }}</a>
-        {{ else }}
-          {{ .question }}
-        {{ end }}
-      </li>
+      <li>{{ .question }}</li>
     {{ end }}
   </ul>
 </section>
+{{ else }}
+<p>Test : aucune curiosité trouvée.</p>
 {{ end }}
