@@ -1,13 +1,5 @@
 ---
 title: "Pourquoi on grandit puis on s’arrête"
-description: "Enfant, on grandit à vue d’œil. Puis, un jour, c’est fini. Voici pourquoi la croissance s’emballe… puis s’arrête."
-slug: "pourquoi-on-grandit-puis-on-sarrete"
-date: 2026-11-13
-categories: ["Encyclopédie", "Sciences", "Enfance"]
----
-
----
-title: "Pourquoi on grandit puis on s’arrête"
 description: "Pourquoi grandit-on pendant l’enfance avant de cesser de prendre de la taille ? Comprendre les os, les hormones et la croissance."
 slug: "pourquoi-on-grandit-puis-on-sarrete"
 date: 2026-11-13
